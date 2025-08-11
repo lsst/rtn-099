@@ -26,7 +26,7 @@
 %% does not need to be explicitly stated.
 %%
 %% using aastex version 6.3
-\documentclass[modern]{aastex631}
+\documentclass[modern]{aastex7}
 
 %% The default is a single spaced, 10 point font, single spaced article.
 %% There are 5 other style options available via an optional argument. They
@@ -110,7 +110,7 @@
 
 
 \begin{document}
-%\input{authors}
+\input{authors}
 \date{\today}
 \title{Photometric Transformation Relations for the LSST Data Preview 1}
 
@@ -152,8 +152,8 @@
 
 %% Modify acknowldgments as needed.
 \begin{acknowledgments}
-This material is based upon work supported in part by the National Science Foundation through Cooperative Agreement AST-1258333 and Cooperative Support Agreement AST-1202910 managed by the Association of Universities for Research in Astronomy (AURA), and the Department of Energy under Contract No. DE-AC02-76SF00515 with the SLAC National Accelerator Laboratory managed by Stanford University.
-Additional Rubin Observatory funding comes from private donations, grants to universities, and in-kind support from LSSTC Institutional Members.
+This material is based upon work supported in part by the National Science Foundation through Cooperative Agreements AST-1258333 and AST-2241526 and Cooperative Support Agreements AST-1202910 and AST-2211468 managed by the Association of Universities for Research in Astronomy (AURA), and the Department of Energy under Contract No.\ DE-AC02-76SF00515 with the SLAC National Accelerator Laboratory managed by Stanford University.
+Additional Rubin Observatory funding comes from private donations, grants to universities, and in-kind support from LSST-DA Institutional Members.
 \end{acknowledgments}
 
 %% To help institutions obtain information on the effectiveness of their
@@ -167,13 +167,13 @@ Additional Rubin Observatory funding comes from private donations, grants to uni
 %% parentheses, after the keyword, but they are not verified.
 
 \vspace{5mm}
-\facility{Rubin}
+\facility{Rubin:Simonyi(LSSTComCam)}
 
 %% Similar to \facility{}, there is the optional \software command to allow
 %% authors a place to specify which programs were used during the creation of
 %% the manuscript. Authors should list each code and include either a
 %% citation or url to the code inside ()s when available.
-\software{LSST Science Pipelines}
+\software{LSST Science Pipelines \citep{PSTN-019}}
 
 %% Appendix material should be preceded with a single \appendix command.
 %% There should be a \section command for each appendix. Mark appendix
