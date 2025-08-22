@@ -1,3 +1,0 @@
-[submodule "lsst-texmf"]
-	path = lsst-texmf
-	url = https://github.com/lsst/lsst-texmf
