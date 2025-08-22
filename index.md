@@ -17,7 +17,7 @@ Synthetic magnitudes were derived by integrating spectrophotometric spectra from
 
 | Transformation Equation                                                     | RMS      | Applicable Color Range  | QA Plot  |
 | :-------------------------------------------------------------------------- | -------: | ----------------------: | -------: |
-| `g_{LSST} = g_{DES} + 0.016 (g-i)_{DES} - 0.003 (g-i)^2_{DES} + 0.006`      | `0.002`  | `X < (g-i)_{DES} < Y`   | link     |
+| `g_{LSST} = g_{DES} + 0.016 (g-i)_{DES} - 0.003 (g-i)^2_{DES} + 0.006`      | `0.002`  | `X < (g-i)_{DES} < Y`   | [link](_static/plots/qaPlot.des_to_lsst.fit.dmag_g.gi_des.norder2.qa1.png) |
 | `r_{LSST} = r_{DES} + 0.185 (r-i)_{DES} - 0.015 (r-i)^2_{DES} + 0.010`      | `0.008`  | `X < (g-i)_{DES} < Y`   | link     |
 | `i_{LSST} = i_{DES} + 0.150 (r-i)_{DES} - 0.003 (r-i)^2_{DES} - 0.009`      | `0.005`  | `X < (g-i)_{DES} < Y`   | link     |
 | `z_{LSST} = z_{DES} + 0.270 (i-z)_{DES} + 0.036 (i-z)^2_{DES} - 0.003`      | `0.010`  | `X < (g-i)_{DES} < Y`   | link     |
@@ -452,3 +452,4 @@ Object distributions of the non-sheared catalog at various points during cuts. L
 ```{bibliography}
 
 ```
+
