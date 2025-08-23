@@ -35,10 +35,10 @@ ComCam data were used to derive empirical transformations between DES and LSST C
 
 | Transformation Equation                                                             | RMS      | Applicable Color Range        | QA Plot  |
 | :---------------------------------------------------------------------------------- | -------: | ----------------------------: | -------: |
-| `g_{ComCam} = g_{DES} + 0.005 (g-i)_{ComCam} - 0.001`                               | `0.013   | `-0.6 < (g-i)_{ComCam} < 3.7` | [link](_static/plots/qaPlot.ComCam_to_des.fit.dmag_g.gi_des.norder1.qa1.png) |
-| `r_{ComCam} = r_{DES} - 0.292 (i-z)_{ComCam} - 0.005 (i-z)^2_{ComCam} + 0.013`      | `0.010`  | `-0.2 < (i-z)_{ComCam} < 1.0` | [link](_static/plots/qaPlot.ComCam_to_des.fit.dmag_r.iz_des.norder2.qa1.png) |
-| `i_{ComCam} = i_{DES} + 0.262 (i-z)_{ComCam} + 0.048 (i-z)^2_{ComCam} - 0.006`      | `0.008`  | `-0.2 < (i-z)_{ComCam} < 1.0` | [link](_static/plots/qaPlot.ComCam_to_des.fit.dmag_i.iz_des.norder2.qa1.png) |
-| `z_{ComCam} = z_{DES} + 0.262 (i-z)_{ComCam} - 0.046 (i-z)^2_{ComCam} + 0.001`      | `0.010`  | `-0.2 < (i-z)_{ComCam} < 0.8` | [link](_static/plots/qaPlot.ComCam_to_des.fit.dmag_z.iz_des.norder2.qa1.png) |
+| `g_{DES} = g_{ComCam} + 0.005 (g-i)_{ComCam} - 0.001`                               | `0.013   | `-0.6 < (g-i)_{ComCam} < 3.7` | [link](_static/plots/qaPlot.ComCam_to_des.fit.dmag_g.gi_ComCam.norder1.qa1.png) |
+| `r_{DES} = r_{ComCam} - 0.292 (i-z)_{ComCam} - 0.005 (i-z)^2_{ComCam} + 0.013`      | `0.010`  | `-0.2 < (i-z)_{ComCam} < 1.0` | [link](_static/plots/qaPlot.ComCam_to_des.fit.dmag_r.iz_ComCam.norder2.qa1.png) |
+| `i_{DES} = i_{ComCam} + 0.262 (i-z)_{ComCam} + 0.048 (i-z)^2_{ComCam} - 0.006`      | `0.008`  | `-0.2 < (i-z)_{ComCam} < 1.0` | [link](_static/plots/qaPlot.ComCam_to_des.fit.dmag_i.iz_ComCam.norder2.qa1.png) |
+| `z_{DES} = z_{ComCam} + 0.262 (i-z)_{ComCam} - 0.046 (i-z)^2_{ComCam} + 0.001`      | `0.010`  | `-0.2 < (i-z)_{ComCam} < 0.8` | [link](_static/plots/qaPlot.ComCam_to_des.fit.dmag_z.iz_ComCam.norder2.qa1.png) |
 :::
 
 
@@ -456,6 +456,7 @@ Object distributions of the non-sheared catalog at various points during cuts. L
 ```{bibliography}
 
 ```
+
 
 
 
