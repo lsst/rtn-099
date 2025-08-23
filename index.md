@@ -30,12 +30,16 @@ Synthetic magnitudes were derived by integrating spectrophotometric spectra from
 
 ComCam data were used to derive empirical transformations between DES and LSST ComCam filters. All $S/N >$ 5 point sources in the DES footprint were selected, including quasars and non-standard stars.
 
-g_{\rm ComCam} = g_{\rm DES} + 0.005 (g - i)_{\rm ComCam} - 0.001 \quad \text{(RMS: 0.013 mag)}\\
-r_{\rm ComCam} = r_{\rm DES} - 0.292 (i - z)_{\rm ComCam} - 0.005 (i - z)^2_{\rm ComCam} + 0.013 \quad \text{(RMS: 0.010 mag)}\\
-i_{\rm ComCam} = i_{\rm DES} + 0.262 (i - z)_{\rm ComCam} + 0.048 (i - z)^2_{\rm ComCam} - 0.006 \quad \text{(RMS: 0.008 mag)}\\
-z_{\rm ComCam} = z_{\rm DES} + 0.262 (i - z)_{\rm ComCam} - 0.046 (i - z)^2_{\rm ComCam} + 0.001 \quad \text{(RMS: 0.010 mag)}
+:::{table} ComCam to DES Transformation Equations (Version `v_2025_08_22`).
+:widths: auto
 
-Band
+| Transformation Equation                                                             | RMS      | Applicable Color Range       | QA Plot  |
+| :---------------------------------------------------------------------------------- | -------: | ---------------------------: | -------: |
+| `g_{ComCam} = g_{DES} + 0.005 (g - i)_{ComCam} - 0.001`                             | `0.013   | `-1.0 < (g-i)_{DES} < 3.9`   | [link](_static/plots/qaPlot.ComCam_to_des.fit.dmag_g.gi_des.norder1.qa1.png) |
+| `r_{ComCam} = r_{DES} - 0.292 (i - z)_{ComCam} - 0.005 (i - z)^2_{ComCam} + 0.013`  | `0.010`  | `-0.4 < (i-z)_{DES} < 2.3`   | [link](_static/plots/qaPlot.ComCam_to_des.fit.dmag_r.iz_des.norder2.qa1.png) |
+| `i_{ComCam} = i_{DES} + 0.262 (i - z)_{ComCam} + 0.048 (i - z)^2_{ComCam} - 0.006`  | `0.008`  | `-0.4 < (i-z)_{DES} < 2.2`   | [link](_static/plots/qaPlot.ComCam_to_des.fit.dmag_i.iz_des.norder2.qa1.png) |
+| `z_{ComCam} = z_{DES} + 0.262 (i - z)_{ComCam} - 0.046 (i - z)^2_{ComCam} + 0.001`  | `0.010`  | `-0.3 < (i-z)_{DES} < 1.8`   | [link](_static/plots/qaPlot.ComCam_to_des.fit.dmag_z.iz_des.norder2.qa1.png) |
+:::
 
 
 
@@ -452,6 +456,7 @@ Object distributions of the non-sheared catalog at various points during cuts. L
 ```{bibliography}
 
 ```
+
 
 
 
