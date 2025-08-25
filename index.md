@@ -78,10 +78,10 @@ df['g_des'] = df['g_ref2'] - df['offset']
 
 | Transformation Relation    | RMS      | Applicable Color Range  | QA Plot  | Lookup Table  |
 | :--------------------------| -------: | ----------------------: | -------: | ------------: |
-| ComCam g,g-i to DES g      | `0.00X`  | `X < (g-i)_{DES} < Y`   | link     | link          |
-| ComCam r,r-i to DES r      | `0.00X`  | `X < (g-i)_{DES} < Y`   | link     | link          |
-| ComCam i,i-z to DES i      | `0.00X`  | `X < (g-i)_{DES} < Y`   | link     | link          |
-| ComCam z,i-z to DES z      | `0.01X`  | `X < (g-i)_{DES} < Y`   | link     | link          |
+| ComCam g,g-i to DES g      | `0.00X`  | `X < (g-i)_{DES} < Y`   | [link](_static/plots/qaPlot_transInterp.ComCam_to_des.g_gi_ComCam.png)     | link          |
+| ComCam r,r-i to DES r      | `0.00X`  | `X < (g-i)_{DES} < Y`   | [link](_static/plots/qaPlot_transInterp.ComCam_to_des.r_ri_ComCam.png)     | link          |
+| ComCam i,i-z to DES i      | `0.00X`  | `X < (g-i)_{DES} < Y`   | [link](_static/plots/qaPlot_transInterp.ComCam_to_des.i_iz_ComCam.png)     | link          |
+| ComCam z,i-z to DES z      | `0.01X`  | `X < (g-i)_{DES} < Y`   | [link](_static/plots/qaPlot_transInterp.ComCam_to_des.z_iz_ComCam.png)     | link          |
 :::
 
 
@@ -119,4 +119,5 @@ References
 This technical note follows the style and structure of the DES DR2 photometric transformation documentation: https://des.ncsa.illinois.edu/releases/dr2/dr2-docs/dr2-transformations
 
 Rubin Observatory overview paper: \citet{2019ApJ...873..111I}.
+
 
