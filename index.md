@@ -6,9 +6,9 @@ This technical note provides photometric transformation relations between the Ve
 DOI: ***TBD***
 
 Useful technical notes and webpages to consult:
-* https://sitcomtn-162.lsst.io/
-* https://sitcomtn-050.lsst.io/
-* https://des.ncsa.illinois.edu/releases/dr2/dr2-docs/dr2-transformations
+* https://sitcomtn-162.lsst.io/ (for markdown formatting advice)
+* https://sitcomtn-050.lsst.io/ (for markdown formatting advice)
+* https://des.ncsa.illinois.edu/releases/dr2/dr2-docs/dr2-transformations (we wish to roughly following the format of these DES DR2 transformation relations webpages for this technical note)
 
 ## Transformation Methods
 
@@ -86,39 +86,12 @@ df['g_des'] = df['g_ref2'] - df['offset']
 
 
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=1.0\textwidth]{./Figures/qaPlot_transInterp.ComCam_to_des.g_gi_ComCam.png}
-    \caption{Transformation Interpolations from ComCam-$g$ to DES-$g$ in the ($g - i$) filter color}
-    \label{fig:interp-g}
-\end{figure}
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=1.0\textwidth]{./Figures/qaPlot_transInterp.ComCam_to_des.i_iz_ComCam.png}
-    \caption{Transformation Interpolations from ComCam-$i$ to DES-$i$ in the ($i - z$) filter color}
-    \label{fig:interp-i}
-\end{figure}
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=1.0\textwidth]{./Figures/qaPlot_transInterp.ComCam_to_des.r_ri_ComCam.png}
-    \caption{Transformation Interpolations from ComCam-$r$ to DES-$r$ in the ($r - i$) filter color}
-    \label{fig:interp-r}
-\end{figure}
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=1.0\textwidth]{./Figures/qaPlot_transInterp.ComCam_to_des.z_iz_ComCam.png}
-    \caption{Transformation Interpolations from ComCam-$z$ to DES-$z$ in the ($i - z$) filter color}
-    \label{fig:interp-z}
-\end{figure}
-
-References
-
-This technical note follows the style and structure of the DES DR2 photometric transformation documentation: https://des.ncsa.illinois.edu/releases/dr2/dr2-docs/dr2-transformations
+# References
 
 Rubin Observatory overview paper: \citet{2019ApJ...873..111I}.
+
 
 
 
