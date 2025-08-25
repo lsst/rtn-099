@@ -52,9 +52,12 @@ ComCam data were used to derive empirical transformations between DES and LSST C
 
 ## Lookup Table (Interpolation) Transformations
 
-Interpolation methods were used to model complex or non-linear relationships between survey measurements. These methods rely on binning color indices and computing median magnitude differences.
+Interpolation methods were used to model complex or non-linear relationships between survey measurements. 
+These methods rely on binning color indices and computing median magnitude differences.
 
-You can use the interpolation CSV files below to convert data from one photometric system to the other via interpolation methods. The files contain the delta_mag vs color locus in bins of (typically) 0.1-mag binsize along the color axis. Here is some python code that takes the interpolation CSV file for the transformation from ATLAS-REFCAT2 g-band to DES g-band to using the ATLAS-REFCAT2 g mag and ATLAS-REFCAT2 g-i color. The code makes use of the scipy "interpolate" routine.
+The lookup tables included in the tables below can be used to convert data from one photometric system to the other via interpolation methods. 
+The files contain the delta_mag vs color locus in bins of (typically) 0.1-mag binsize along the color axis. 
+Here is a python code that takes the lookkup table CSV file for the transformation from ATLAS-REFCAT2 g-band to DES g-band to using the ATLAS-REFCAT2 g mag and ATLAS-REFCAT2 g-i color. The code makes use of the scipy "interpolate" routine.
 
 ```
 import pandas as pd
@@ -91,6 +94,7 @@ df['g_des'] = df['g_ref2'] - df['offset']
 # References
 
 Rubin Observatory overview paper: \citet{2019ApJ...873..111I}.
+
 
 
 
