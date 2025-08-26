@@ -20,3 +20,30 @@ orcid = "https://orcid.org/0000-0001-9279-3770"
 name = "Austin Peay State University"
 internal_id = "Peay"
 ror = "https://ror.org/05tx3bv88"
+
+[[technote.authors]]
+internal_id = "tuckerdl"
+name = {given = "Douglas L.", family = "Tucker"}
+orcid = "https://orcid.org/0000-0001-7211-5729"
+[[technote.authors.affiliations]]
+name = "Fermi National Accelerator Laboratory"
+internal_id = "Fermilab"
+ror = "https://ror.org/020hgte69"
+
+[[technote.authors]]
+internal_id = "smithja"
+name = {given = "J. Allyn", family = "Smith"}
+orcid = "https://orcid.org/0000-0002-6261-4601"
+[[technote.authors.affiliations]]
+name = "Austin Peay State University"
+internal_id = "Peay"
+ror = "https://ror.org/05tx3bv88"
+
+[[technote.authors]]
+internal_id = "adaircl"
+name = {given = "Christina L.", family = "Adair"}
+orcid = "https://orcid.org/0009-0008-8623-871X"
+[[technote.authors.affiliations]]
+name = "SLAC National Accelerator Laboratory"
+internal_id = "SLAC"
+ror = "https://ror.org/05gzmn429"
