@@ -1,46 +1,12 @@
 name: CI
 
-"on": [push, pull_request]
+'on': [push, pull_request, workflow_dispatch]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # full history for metadata
-          submodules: true
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Python install
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install uv
-          uv pip install --system "lander<2.0.0" setuptools -r lsst-texmf/requirements-technote.txt
-
-      - name: Compile author list
-        run: |
-          make authors.tex
-
-      - name: Login to Docker Hub
-        uses: docker/login-action@v1
-        with:
-          username: sqrereadonly
-          password: ${{ secrets.DOCKERHUB_SQREREADONLY_TOKEN }}
-
-      - name: TeX build
-        run: |
-          docker run --rm -v `pwd`:/workspace -w /workspace lsstsqre/lsst-texmf:latest sh -c 'make'
-
-      - name: Landing page upload
-        if: ${{ github.event_name == 'push' }}
-        env:
-          LTD_PASSWORD: ${{ secrets.LTD_PASSWORD }}
-          LTD_USERNAME: ${{ secrets.LTD_USERNAME }}
-        run: |
-          lander --upload --pdf RTN-099.pdf --ltd-product rtn-099 --title "Photometric Transformation Relations for the LSST Data Preview 1" --handle "RTN-099" --lsstdoc "RTN-099.tex"
+  call-workflow:
+    uses: lsst-sqre/rubin-sphinx-technote-workflows/.github/workflows/ci.yaml@v1
+    with:
+      handle: rtn-099
+    secrets:
+      ltd_username: ${{ secrets.LTD_USERNAME }}
+      ltd_password: ${{ secrets.LTD_PASSWORD }}

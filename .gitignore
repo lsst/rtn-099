@@ -1,11 +1,5 @@
-*.aux
-*.bbl
-*.blg
-*.fdb_latexmk
-*.fls
-*.log
-*.out
-*.xdv
-*.dvi
-*.pdf
-authors.tex
+_build/
+.technote/
+.tox/
+venv/
+.venv/

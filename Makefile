@@ -1,30 +1,26 @@
-DOCTYPE = RTN
-DOCNUMBER = 099
-DOCNAME = $(DOCTYPE)-$(DOCNUMBER)
+.PHONY:
+init:
+	pip install tox pre-commit
+	pre-commit install
 
-tex = $(filter-out $(wildcard *acronyms.tex) , $(wildcard *.tex))
+.PHONY:
+html:
+	tox run -e html
 
-GITVERSION := $(shell git log -1 --date=short --pretty=%h)
-GITDATE := $(shell git log -1 --date=short --pretty=%ad)
-GITSTATUS := $(shell git status --porcelain)
-ifneq "$(GITSTATUS)" ""
-	GITDIRTY = -dirty
-endif
+.PHONY:
+lint:
+	tox run -e lint,linkcheck
 
-export TEXMFHOME ?= lsst-texmf/texmf
+.PHONY:
+add-author:
+	tox run -e add-author
 
-$(DOCNAME).pdf: $(tex) local.bib authors.tex
-	latexmk -bibtex -xelatex -f $(DOCNAME)
+.PHONY:
+sync-authors:
+	tox run -e sync-authors
 
-authors.tex:  authors.yaml
-	python3 $(TEXMFHOME)/../bin/db2authors.py -m aas7 > authors.tex
-
-.PHONY: clean
+.PHONY:
 clean:
-	latexmk -c
-	rm -f $(DOCNAME).bbl
-	rm -f $(DOCNAME).pdf
-	rm -f meta.tex
-	rm -f authors.tex
-
-.FORCE:
+	rm -rf _build
+	rm -rf .technote
+	rm -rf .tox
