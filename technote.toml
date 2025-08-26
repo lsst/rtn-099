@@ -1,0 +1,22 @@
+[technote]
+id = "RTN-099"
+series_id = "RTN"
+canonical_url = "https://rtn-099.lsst.io"
+github_url = "https://github.com/lsst/rtn-099"
+github_default_branch = "main"
+date_created = 2025-08-26T21:03:13Z
+organization.name = "NSF-DOE Vera C. Rubin Observatory"
+organization.ror = "https://ror.org/048g3cy84"
+license.id = "CC-BY-4.0"
+
+[technote.status]
+state = "draft"
+
+[[technote.authors]]
+internal_id = "porterm"
+name = {given = "Meagan N.", family = "Porter"}
+orcid = "https://orcid.org/0000-0001-9279-3770"
+[[technote.authors.affiliations]]
+name = "Austin Peay State University"
+internal_id = "Peay"
+ror = "https://ror.org/05tx3bv88"
