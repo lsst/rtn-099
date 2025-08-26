@@ -61,7 +61,7 @@ These methods rely on binning color indices and computing median magnitude diffe
 
 The lookup tables included in the tables below can be used to convert data from one photometric system to the other via interpolation methods. 
 The files contain the delta_mag vs color locus in bins of (typically) 0.1-mag binsize along the color axis. 
-Here is a python code that takes the lookkup table CSV file for the transformation from ATLAS-REFCAT2 g-band to DES g-band to using the ATLAS-REFCAT2 g mag and ATLAS-REFCAT2 g-i color. The code makes use of the scipy "interpolate" routine.
+Here is a python code that takes the lookkup table CSV file for the transformation from ComCam $g$-band and $(g-i)$ color to DES $g$-band. The code makes use of the `scipy` `interpolate` routine.
 
 ```
 import pandas as pd
@@ -72,12 +72,15 @@ lut_name = 'transInterp.ComCam_to_des.g_gi_ComCam.csv'
 df_interp = pd.read_csv(lut_name)
 
 # Create linear interpolation of the median dmag vs. color bin calculated above...
-response = interpolate.interp1d(df_interp.bin_label.values.astype(float), df_interp.bin_median.values, \
-                                    bounds_error=False, fill_value=0., kind='linear')
+response = interpolate.interp1d(df_interp.bin_label.values.astype(float), \
+                                    df_interp.bin_median.values, \
+                                    bounds_error=False, fill_value=0., \
+                                    kind='linear')
 
 # Read in file with data to be transformed...
 df = pd.read_csv(inputFile)
-# The following assumes a column with ComCam g and a column with ComCam (g-i) in this file...
+# The following assumes a column with ComCam g and
+# a column with ComCam (g-i) in this file...
 df['offset'] = response(df['gi_ComCam'].values)
 df['g_des'] = df['g_ComCam'] - df['offset']
 ```
