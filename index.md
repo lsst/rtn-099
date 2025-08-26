@@ -8,7 +8,11 @@ This technical note provides photometric transformation relations between the Ve
 
 See the [Documenteer documentation](https://documenteer.lsst.io/technotes/index.html) for tips on how to write and configure your new technote.
 
-## Transformation Methods
+## Polynomial Fit Transformations
+
+### Overview
+
+_Under Construction_
 
 ### Synthetic Transformations
 
@@ -50,6 +54,8 @@ ComCam data were used to derive empirical transformations between DES and LSST C
 
 ## Lookup Table (Interpolation) Transformations
 
+### Overview
+
 Interpolation methods were used to model complex or non-linear relationships between survey measurements. 
 These methods rely on binning color indices and computing median magnitude differences.
 
@@ -73,6 +79,8 @@ df = pd.read_csv(inputFile)   # The following assumes a column with ATLAS-REFCAT
 df['offset'] = response(df['gi_ref2'].values)
 df['g_des'] = df['g_ref2'] - df['offset']
 ```
+
+### ComCam Transformations
 
 :::{table} ComCam DP1 to DES DR2 (Version `v_2025_08_22`).
 :widths: auto
