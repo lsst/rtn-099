@@ -8,13 +8,13 @@ This technical note provides photometric transformation relations between the Ve
 
 See the [Documenteer documentation](https://documenteer.lsst.io/technotes/index.html) for tips on how to write and configure your new technote.
 
-## Polynomial Fit Transformations
+## 1. Polynomial Fit Transformations
 
-### Overview
+### 1.1. Overview
 
 _Under Construction_
 
-### Synthetic Transformations
+### 1.2. Synthetic LSSTCam Transformations
 
 Synthetic magnitudes were derived by integrating spectrophotometric spectra from the Pickles Stellar Spectra Library [Pickles:1998] with filter passband transmission curves for DES and LSST. These magnitudes were calculated using broad-band absolute magnitude definitions and processed using a Python-based fitting code to generate transformation equations. Due to the limited number of stars in the Pickles library (~100), the resulting plots are sparse but provide a consistent reference.
 
@@ -33,7 +33,7 @@ Synthetic magnitudes were derived by integrating spectrophotometric spectra from
 
    
 
-### ComCam Transformations
+### 1.3. ComCam Transformations
 
 ComCam data were used to derive empirical transformations between DES and LSST ComCam filters. All $S/N >$ 5 point sources in the DES footprint were selected, including quasars and non-standard stars.
 
@@ -52,9 +52,9 @@ ComCam data were used to derive empirical transformations between DES and LSST C
 
    
 
-## Lookup Table (Interpolation) Transformations
+## 2. Lookup Table (Interpolation) Transformations
 
-### Overview
+### 2.1. Overview
 
 Interpolation methods were used to model complex or non-linear relationships between survey measurements. 
 These methods rely on binning color indices and computing median magnitude differences.
@@ -80,7 +80,7 @@ df['offset'] = response(df['gi_ref2'].values)
 df['g_des'] = df['g_ref2'] - df['offset']
 ```
 
-### ComCam Transformations
+### 2.2 ComCam Transformations
 
 :::{table} ComCam DP1 to DES DR2 (Version `v_2025_08_22`).
 :widths: auto
