@@ -71,11 +71,13 @@ from scipy import interpolate
 lut_name = 'transInterp.ComCam_to_des.g_gi_ComCam.csv'
 df_interp = pd.read_csv(lut_name)
 
-# Create linear interpolation of the median dmag vs. color bin calculated above...
-response = interpolate.interp1d(df_interp.bin_label.values.astype(float), \
-                                    df_interp.bin_median.values, \
-                                    bounds_error=False, fill_value=0., \
-                                    kind='linear')
+# Create linear interpolation of the median dmag vs. color
+#  bin calculated above...
+response = interpolate.interp1d(\
+                  df_interp.bin_label.values.astype(float), \
+                  df_interp.bin_median.values, \
+                  bounds_error=False, fill_value=0., \
+                  kind='linear')
 
 # Read in file with data to be transformed...
 df = pd.read_csv(inputFile)
