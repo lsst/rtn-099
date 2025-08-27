@@ -14,9 +14,11 @@ See the [Documenteer documentation](https://documenteer.lsst.io/technotes/index.
 
 _Under Construction_
 
+{cite}`RTN-095`
+
 ### 1.2. Synthetic LSSTCam Transformations
 
-Synthetic magnitudes were derived by integrating spectrophotometric spectra from the Pickles Stellar Spectra Library [Pickles:1998] {cite}`1998PASP..110..863P` with filter passband transmission curves for DES and LSST. These magnitudes were calculated using broad-band absolute magnitude definitions and processed using a Python-based fitting code to generate transformation equations. Due to the limited number of stars in the Pickles library (~100), the resulting plots are sparse but provide a consistent reference.
+Synthetic magnitudes were derived by integrating spectrophotometric spectra from the Pickles Stellar Spectra Library {cite}`1998PASP..110..863P` with filter passband transmission curves for DES and LSST. These magnitudes were calculated using broad-band absolute magnitude definitions and processed using a Python-based fitting code to generate transformation equations. Due to the limited number of stars in the Pickles library (~100), the resulting plots are sparse but provide a consistent reference.
 
 
 :::{table} DES to LSST Transformation Equations (Version `v_2025_08_22`).
