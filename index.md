@@ -8,13 +8,19 @@ This technical note provides photometric transformation relations between the Ve
 
 See the [Documenteer documentation](https://documenteer.lsst.io/technotes/index.html) for tips on how to write and configure your new technote.
 
+## 0. General Overview
+
+These transformations were derived by matching data from other surveys with the Rubin LSST DP1 {cite}`RTN-095`.  This technical note provides a general overview of the results from the calculation of transformations to and from the Rubin LSST DP1 photometric system.  Details of the process will be presented in on or more future journal articles (Porter et al., _in preparation_, etc.).  
+
+This technical note should be considered a living document:  as additional photometric systems are analyzed and/or current transformations are updated, this document will be updated to include the new material.
+
 ## 1. Polynomial Fit Transformations
 
 ### 1.1. Overview
 
 _Under Construction_
 
-{cite}`RTN-095`
+
 
 ### 1.2. Synthetic LSSTCam Transformations
 
