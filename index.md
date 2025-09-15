@@ -138,6 +138,13 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 | z_ps1 | $z_ps1 - z_ComCam = 0.003 +0.020((i-z)_{ComCam})$ | 0.009 | $-1.8 < ((i-z)_{ComCam}) <= 1.5$ | [link](_static/plots/qaPlot.ComCam_to_PS1DR2.fit.dmag_z_ps1-z_ComCam.iz_ComCam.norder1.qa1.png) |
 
 
+| Filter | Equation | RMS | Range | Link |
+|---|---|---|---|---|
+| g_ComCam | $g_ComCam - g_sdss = 0.007 -0.062((g-i)_{sdss})$ | 0.015 | $0.2 < ((g-i)_{sdss}) <= 3.1$ | [link](_static/plots/qaPlot.SDSS_to_ComCam.fit.dmag_g_ComCam-g_sdss.gi_sdss.norder1.qa1.png) |
+| gi_ComCam | $gi_ComCam - gi_sdss = -0.002 -0.064((g-i)_{sdss})$ | 0.021 | $0.2 < ((g-i)_{sdss}) <= 3.1$ | [link](_static/plots/qaPlot.SDSS_to_ComCam.fit.dmag_gi_ComCam-gi_sdss.gi_sdss.norder1.qa1.png) |
+| i_ComCam | $i_ComCam - i_sdss = 0.019 -0.010((g-i)_{sdss})$ | 0.012 | $0.2 < ((g-i)_{sdss}) <= 3.1$ | [link](_static/plots/qaPlot.SDSS_to_ComCam.fit.dmag_i_ComCam-i_sdss.gi_sdss.norder1.qa1.png) |
+| r_ComCam | $r_ComCam - r_sdss = 0.005 -0.007((g-i)_{sdss})$ | 0.011 | $0.2 < ((g-i)_{sdss}) <= 3.1$ | [link](_static/plots/qaPlot.SDSS_to_ComCam.fit.dmag_r_ComCam-r_sdss.gi_sdss.norder1.qa1.png) |
+| z_ComCam | $z_ComCam - z_sdss = 0.032 +0.020((g-i)_{sdss})$ | 0.017 | $0.2 < ((g-i)_{sdss}) <= 3.1$ | [link](_static/plots/qaPlot.SDSS_to_ComCam.fit.dmag_z_ComCam-z_sdss.gi_sdss.norder1.qa1.png) |
 
 
 ## References
