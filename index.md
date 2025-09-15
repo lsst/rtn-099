@@ -147,6 +147,14 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 | z_ComCam | $z_ComCam - z_sdss = 0.032 +0.020((g-i)_{sdss})$ | 0.017 | $0.2 < ((g-i)_{sdss}) <= 3.1$ | [link](_static/plots/qaPlot.SDSS_to_ComCam.fit.dmag_z_ComCam-z_sdss.gi_sdss.norder1.qa1.png) |
 
 
+| Filter | Equation | RMS | Range | Link |
+|---|---|---|---|---|
+| B | $B - g_ComCam = 0.215 +0.284((g-i)_{ComCam})$ | 0.024 | $0.2 < ((g-i)_{ComCam}) <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_B-g_ComCam.gi_ComCam.norder1.qa1.png) |
+| I | $I - i_ComCam = -0.359 -0.074((g-i)_{ComCam})$ | 0.016 | $0.2 < ((g-i)_{ComCam}) <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_I-i_ComCam.gi_ComCam.norder1.qa1.png) |
+| R | $R - r_ComCam = -0.142 -0.095((g-i)_{ComCam})$ | 0.015 | $0.2 < ((g-i)_{ComCam}) <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_R-r_ComCam.gi_ComCam.norder1.qa1.png) |
+| U | $U - u_ComCam = -0.687 +0.057((g-i)_{ComCam})$ | 0.088 | $0.2 < ((g-i)_{ComCam}) <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_U-u_ComCam.gi_ComCam.norder1.qa1.png) |
+| V | $V - g_ComCam = -0.041 -0.302((g-i)_{ComCam})$ | 0.022 | $0.2 < ((g-i)_{ComCam}) <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_V-g_ComCam.gi_ComCam.norder1.qa1.png) |
+
 ## References
 
 ```{bibliography}
