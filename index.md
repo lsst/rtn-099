@@ -125,6 +125,12 @@ ALL MARKDOWN EQUATIONS (COMPACT TABLE)
 | z_ComCam | $z_ComCam - Y_EUCLID = -0.026 +0.366((VIS-Y)_{Euclid}) -0.006((VIS-Y)_{Euclid})^2$ | 0.023 | $-0.1 < ((VIS-Y)_{Euclid}) <= 2.3$ | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_z_ComCam-Y_EUCLID.VISY_EUCLID.norder2.qa1.png) |
 
 
+| Filter | Equation | RMS | Range | Link |
+|---|---|---|---|---|
+| BP_gaia | $BP_gaia - g_ComCam = 0.162 -0.449((g-i)_{ComCam}) +0.081((g-i)_{ComCam})^2$ | 0.027 | $-0.7 < ((g-i)_{ComCam}) <= 3.0$ | [link](_static/plots/qaPlot.ComCam_to_GaiaDR3.fit.dmag_BP_gaia-g_ComCam.gi_ComCam.norder2.qa1.png) |
+| G_gaia | $G_gaia - g_ComCam = -0.054 -0.610((g-i)_{ComCam}) -0.033((g-i)_{ComCam})^2$ | 0.008 | $-0.7 < ((g-i)_{ComCam}) <= 3.0$ | [link](_static/plots/qaPlot.ComCam_to_GaiaDR3.fit.dmag_G_gaia-g_ComCam.gi_ComCam.norder2.qa1.png) |
+| RP_gaia | $RP_gaia - r_ComCam = -0.500 +0.146((g-i)_{ComCam}) -0.233((g-i)_{ComCam})^2$ | 0.036 | $-0.7 < ((g-i)_{ComCam}) <= 3.0$ | [link](_static/plots/qaPlot.ComCam_to_GaiaDR3.fit.dmag_RP_gaia-r_ComCam.gi_ComCam.norder2.qa1.png) |
+
 ## References
 
 ```{bibliography}
