@@ -110,11 +110,19 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 
 
 
+================================================================================
+ALL MARKDOWN EQUATIONS (COMPACT TABLE)
+================================================================================
 
-
-
-
-
+| Filter | Equation | RMS | Range | Link |
+|---|---|---|---|---|
+| g_ComCam | $g_ComCam - VIS_EUCLID = 0.051 +1.465((VIS-Y)_{Euclid}) +0.390((VIS-Y)_{Euclid})^2$ | 0.069 | $-0.1 < ((VIS-Y)_{Euclid}) <= 0.9$ | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_g_ComCam-VIS_EUCLID.VISY_EUCLID.norder2.qa1.png) |
+| g_ComCam | $g_ComCam - VIS_EUCLID = 0.986 +0.488((VIS-Y)_{Euclid}) +0.287((VIS-Y)_{Euclid})^2$ | 0.073 | $0.9 < ((VIS-Y)_{Euclid}) <= 2.3$ | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_g_ComCam-VIS_EUCLID.VISY_EUCLID.norder2.qa1.png) |
+| i_ComCam | $i_ComCam - VIS_EUCLID = -0.054 -0.345((VIS-Y)_{Euclid}) +0.091((VIS-Y)_{Euclid})^2$ | 0.019 | $-0.1 < ((VIS-Y)_{Euclid}) <= 2.3$ | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_i_ComCam-VIS_EUCLID.VISY_EUCLID.norder2.qa1.png) |
+| r_ComCam | $r_ComCam - VIS_EUCLID = -0.059 +0.163((VIS-Y)_{Euclid}) +0.381((VIS-Y)_{Euclid})^2$ | 0.042 | $-0.1 < ((VIS-Y)_{Euclid}) <= 2.3$ | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_r_ComCam-VIS_EUCLID.VISY_EUCLID.norder2.qa1.png) |
+| y_ComCam | $y_ComCam - Y_EUCLID = 0.094 +0.290((Y-H)_{Euclid}) +0.238((Y-H)_{Euclid})^2$ | 0.042 | $-0.6 < ((Y-H)_{Euclid}) <= 0.0$ | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_y_ComCam-Y_EUCLID.YH_EUCLID.norder2.qa1.png) |
+| y_ComCam | $y_ComCam - Y_EUCLID = 0.173 +0.031((Y-H)_{Euclid}) +0.095((Y-H)_{Euclid})^2$ | 0.049 | $0.0 < ((Y-H)_{Euclid}) <= 0.6$ | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_y_ComCam-Y_EUCLID.YH_EUCLID.norder2.qa1.png) |
+| z_ComCam | $z_ComCam - Y_EUCLID = -0.026 +0.366((VIS-Y)_{Euclid}) -0.006((VIS-Y)_{Euclid})^2$ | 0.023 | $-0.1 < ((VIS-Y)_{Euclid}) <= 2.3$ | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_z_ComCam-Y_EUCLID.VISY_EUCLID.norder2.qa1.png) |
 
 
 ## References
