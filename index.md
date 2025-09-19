@@ -113,7 +113,7 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 
 | Filter | Equation | RMS | Range | Link |
 |----------|-------------------------------------------------------------------------------------|---|---|---|
-| g_ComCam | $g_ComCam - VIS_EUCLID = 0.051 +1.465((VIS-Y)_{Euclid}) +0.390((VIS-Y)_{Euclid})^2$ | 0.069 | $-0.1 < ((VIS-Y)_{Euclid}) <= 0.9$ | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_g_ComCam-VIS_EUCLID.VISY_EUCLID.norder2.qa1.png) |
+| g_ComCam | $g_ComCam - VIS_{EUCLID} = 0.051 +1.465(VIS-Y)_{Euclid} +0.390(VIS-Y)_{Euclid}^2$ | 0.069 | $-0.1 < ((VIS-Y)_{Euclid}) <= 0.9$ | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_g_ComCam-VIS_EUCLID.VISY_EUCLID.norder2.qa1.png) |
 | g_ComCam | $g_ComCam - VIS_EUCLID = 0.986 +0.488((VIS-Y)_{Euclid}) +0.287((VIS-Y)_{Euclid})^2$ | 0.073 | $0.9 < ((VIS-Y)_{Euclid}) <= 2.3$ | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_g_ComCam-VIS_EUCLID.VISY_EUCLID.norder2.qa1.png) |
 | i_ComCam | $i_ComCam - VIS_EUCLID = -0.054 -0.345((VIS-Y)_{Euclid}) +0.091((VIS-Y)_{Euclid})^2$ | 0.019 | $-0.1 < ((VIS-Y)_{Euclid}) <= 2.3$ | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_i_ComCam-VIS_EUCLID.VISY_EUCLID.norder2.qa1.png) |
 | r_ComCam | $r_ComCam - VIS_EUCLID = -0.059 +0.163((VIS-Y)_{Euclid}) +0.381((VIS-Y)_{Euclid})^2$ | 0.042 | $-0.1 < ((VIS-Y)_{Euclid}) <= 2.3$ | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_r_ComCam-VIS_EUCLID.VISY_EUCLID.norder2.qa1.png) |
@@ -131,11 +131,11 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 
 | Filter | Equation | RMS | Range | Link |
 |---|---|---|---|---|
-| g_ps1 | $g_ps1 - g_ComCam = -0.019 -0.035((g-i)_{ComCam})$ | 0.014 | $-2.2 < ((g-i)_{ComCam}) <= 3.0$ | [link](_static/plots/qaPlot.ComCam_to_PS1DR2.fit.dmag_g_ps1-g_ComCam.gi_ComCam.norder1.qa1.png) |
-| i_ps1 | $i_ps1 - i_ComCam = -0.016 +0.014((g-i)_{ComCam})$ | 0.010 | $-2.2 < ((g-i)_{ComCam}) <= 3.0$ | [link](_static/plots/qaPlot.ComCam_to_PS1DR2.fit.dmag_i_ps1-i_ComCam.gi_ComCam.norder1.qa1.png) |
-| r_ps1 | $r_ps1 - r_ComCam = -0.001 +0.004((g-i)_{ComCam})$ | 0.011 | $-2.2 < ((g-i)_{ComCam}) <= 3.0$ | [link](_static/plots/qaPlot.ComCam_to_PS1DR2.fit.dmag_r_ps1-r_ComCam.gi_ComCam.norder1.qa1.png) |
-| y_ps1 | $y_ps1 - y_ComCam = -0.012 +0.057((z-y)_{ComCam})$ | 0.013 | $-1.7 < ((z-y)_{ComCam}) <= 3.0$ | [link](_static/plots/qaPlot.ComCam_to_PS1DR2.fit.dmag_y_ps1-y_ComCam.zy_ComCam.norder1.qa1.png) |
-| z_ps1 | $z_ps1 - z_ComCam = 0.003 +0.020((i-z)_{ComCam})$ | 0.009 | $-1.8 < ((i-z)_{ComCam}) <= 1.5$ | [link](_static/plots/qaPlot.ComCam_to_PS1DR2.fit.dmag_z_ps1-z_ComCam.iz_ComCam.norder1.qa1.png) |
+| g_ps1 | $g_{ps1} - g_ComCam = -0.019 -0.035((g-i)_{ComCam})$ | 0.014 | $-2.2 < ((g-i)_{ComCam}) <= 3.0$ | [link](_static/plots/qaPlot.ComCam_to_PS1DR2.fit.dmag_g_ps1-g_ComCam.gi_ComCam.norder1.qa1.png) |
+| i_ps1 | $i_{ps1} - i_ComCam = -0.016 +0.014((g-i)_{ComCam})$ | 0.010 | $-2.2 < ((g-i)_{ComCam}) <= 3.0$ | [link](_static/plots/qaPlot.ComCam_to_PS1DR2.fit.dmag_i_ps1-i_ComCam.gi_ComCam.norder1.qa1.png) |
+| r_ps1 | $r_{ps1} - r_ComCam = -0.001 +0.004((g-i)_{ComCam})$ | 0.011 | $-2.2 < ((g-i)_{ComCam}) <= 3.0$ | [link](_static/plots/qaPlot.ComCam_to_PS1DR2.fit.dmag_r_ps1-r_ComCam.gi_ComCam.norder1.qa1.png) |
+| y_ps1 | $y_{ps1} - y_ComCam = -0.012 +0.057((z-y)_{ComCam})$ | 0.013 | $-1.7 < ((z-y)_{ComCam}) <= 3.0$ | [link](_static/plots/qaPlot.ComCam_to_PS1DR2.fit.dmag_y_ps1-y_ComCam.zy_ComCam.norder1.qa1.png) |
+| z_ps1 | $z_{ps1} - z_ComCam = 0.003 +0.020((i-z)_{ComCam})$ | 0.009 | $-1.8 < ((i-z)_{ComCam}) <= 1.5$ | [link](_static/plots/qaPlot.ComCam_to_PS1DR2.fit.dmag_z_ps1-z_ComCam.iz_ComCam.norder1.qa1.png) |
 
 
 | Filter | Equation | RMS | Range | Link |
@@ -149,11 +149,11 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 
 | Filter | Equation | RMS | Range | Link |
 |---|---|---|---|---|
-| B | $B - g_ComCam = 0.215 +0.284((g-i)_{ComCam})$ | 0.024 | $0.2 < ((g-i)_{ComCam}) <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_B-g_ComCam.gi_ComCam.norder1.qa1.png) |
-| I | $I - i_ComCam = -0.359 -0.074((g-i)_{ComCam})$ | 0.016 | $0.2 < ((g-i)_{ComCam}) <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_I-i_ComCam.gi_ComCam.norder1.qa1.png) |
-| R | $R - r_ComCam = -0.142 -0.095((g-i)_{ComCam})$ | 0.015 | $0.2 < ((g-i)_{ComCam}) <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_R-r_ComCam.gi_ComCam.norder1.qa1.png) |
-| U | $U - u_ComCam = -0.687 +0.057((g-i)_{ComCam})$ | 0.088 | $0.2 < ((g-i)_{ComCam}) <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_U-u_ComCam.gi_ComCam.norder1.qa1.png) |
-| V | $V - g_ComCam = -0.041 -0.302((g-i)_{ComCam})$ | 0.022 | $0.2 < ((g-i)_{ComCam}) <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_V-g_ComCam.gi_ComCam.norder1.qa1.png) |
+| B | $B - g_{ComCam} = 0.215 +0.284((g-i)_{ComCam})$ | 0.024 | $0.2 < ((g-i)_{ComCam}) <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_B-g_ComCam.gi_ComCam.norder1.qa1.png) |
+| I | $I - i_{ComCam} = -0.359 -0.074((g-i)_{ComCam})$ | 0.016 | $0.2 < ((g-i)_{ComCam}) <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_I-i_ComCam.gi_ComCam.norder1.qa1.png) |
+| R | $R - r_{ComCam} = -0.142 -0.095((g-i)_{ComCam})$ | 0.015 | $0.2 < ((g-i)_{ComCam}) <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_R-r_ComCam.gi_ComCam.norder1.qa1.png) |
+| U | $U - u_{ComCam} = -0.687 +0.057((g-i)_{ComCam})$ | 0.088 | $0.2 < ((g-i)_{ComCam}) <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_U-u_ComCam.gi_ComCam.norder1.qa1.png) |
+| V | $V - g_{ComCam} = -0.041 -0.302((g-i)_{ComCam})$ | 0.022 | $0.2 < ((g-i)_{ComCam}) <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_V-g_ComCam.gi_ComCam.norder1.qa1.png) |
 
 ## References
 
