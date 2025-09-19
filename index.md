@@ -155,6 +155,59 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 | U | $U - u_{ComCam} = -0.687 +0.057((g-i)_{ComCam})$ | 0.088 | $0.2 < ((g-i)_{ComCam}) <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_U-u_ComCam.gi_ComCam.norder1.qa1.png) |
 | V | $V - g_{ComCam} = -0.041 -0.302((g-i)_{ComCam})$ | 0.022 | $0.2 < ((g-i)_{ComCam}) <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_V-g_ComCam.gi_ComCam.norder1.qa1.png) |
 
+
+#### DLT attempts (19 Sep 2025):
+
+| Filter | Equation | RMS | Range | Link |
+|---|---|---|---|---|
+| $U$      | $U - u_{ComCam} = -0.687 + 0.057 (g-i)_{ComCam}$  | 0.088 | $0.2 < (g-i)_{ComCam} <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_U-u_ComCam.gi_ComCam.norder1.qa1.png) |
+| $B$      | $B - g_{ComCam} = 0.215 + 0.284 $(g-i)_{ComCam}$   | 0.024 | $0.2 < (g-i)_{ComCam} <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_B-g_ComCam.gi_ComCam.norder1.qa1.png) |
+| $V$      | $V - g_{ComCam} = -0.041 + -0.302 $(g-i)_{ComCam}$ | 0.022 | $0.2 < (g-i)_{ComCam} <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_V-g_ComCam.gi_ComCam.norder1.qa1.png) |
+| $R$      | $R - r_{ComCam} = -0.142 + -0.095 $(g-i)_{ComCam}$ | 0.015 | $0.2 < (g-i)_{ComCam} <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_R-r_ComCam.gi_ComCam.norder1.qa1.png) |
+| $I$      | $I - i_{ComCam} = -0.359 + -0.074 $(g-i)_{ComCam}$ | 0.016 | $0.2 < (g-i)_{ComCam} <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_I-i_ComCam.gi_ComCam.norder1.qa1.png) |
+
+| Band   | Equation                                         |   RMS | Range                         | Plot                                                                                         |
+|:-------|:-------------------------------------------------|------:|:------------------------------|:---------------------------------------------------------------------------------------------|
+| $U$    | $U - u\_ComCam = -0.687 + 0.057 (g-i)_{ComCam}$  | 0.088 | $0.2 < (g-i)_{ComCam} <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_U-u_ComCam.gi_ComCam.norder1.qa1.png) |
+| $B$    | $B - g\_ComCam = 0.215 + 0.284 (g-i)_{ComCam}$   | 0.024 | $0.2 < (g-i)_{ComCam} <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_B-g_ComCam.gi_ComCam.norder1.qa1.png) |
+| $V$    | $V - g\_ComCam = -0.041 + -0.302 (g-i)_{ComCam}$ | 0.022 | $0.2 < (g-i)_{ComCam} <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_V-g_ComCam.gi_ComCam.norder1.qa1.png) |
+| $R$    | $R - r\_ComCam = -0.142 + -0.095 (g-i)_{ComCam}$ | 0.015 | $0.2 < (g-i)_{ComCam} <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_R-r_ComCam.gi_ComCam.norder1.qa1.png) |
+| $I$    | $I - i\_ComCam = -0.359 + -0.074 (g-i)_{ComCam}$ | 0.016 | $0.2 < (g-i)_{ComCam} <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_I-i_ComCam.gi_ComCam.norder1.qa1.png) |
+
+
+| Band   | Equation                                          |   RMS | Range                         | Plot                                                                                         |
+|:-------|:--------------------------------------------------|------:|:------------------------------|:---------------------------------------------------------------------------------------------|
+| $U$    | $U - u_{ComCam} = -0.687 + 0.057 (g-i)_{ComCam}$  | 0.088 | $0.2 < (g-i)_{ComCam} <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_U-u_ComCam.gi_ComCam.norder1.qa1.png) |
+| $B$    | $B - g_{ComCam} = 0.215 + 0.284 (g-i)_{ComCam}$   | 0.024 | $0.2 < (g-i)_{ComCam} <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_B-g_ComCam.gi_ComCam.norder1.qa1.png) |
+| $V$    | $V - g_{ComCam} = -0.041 + -0.302 (g-i)_{ComCam}$ | 0.022 | $0.2 < (g-i)_{ComCam} <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_V-g_ComCam.gi_ComCam.norder1.qa1.png) |
+| $R$    | $R - r_{ComCam} = -0.142 + -0.095 (g-i)_{ComCam}$ | 0.015 | $0.2 < (g-i)_{ComCam} <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_R-r_ComCam.gi_ComCam.norder1.qa1.png) |
+| $I$    | $I - i_{ComCam} = -0.359 + -0.074 (g-i)_{ComCam}$ | 0.016 | $0.2 < (g-i)_{ComCam} <= 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_I-i_ComCam.gi_ComCam.norder1.qa1.png) |
+
+| Band   | Transformation Equation                           |   RMS | Applicable Color Range          | QA Plot                                                                                      |
+|:-------|:--------------------------------------------------|------:|:--------------------------------|:---------------------------------------------------------------------------------------------|
+| $U$    | $U - u_{ComCam} = -0.687 + 0.057 (g-i)_{ComCam}$  | 0.088 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_U-u_ComCam.gi_ComCam.norder1.qa1.png) |
+| $B$    | $B - g_{ComCam} = 0.215 + 0.284 (g-i)_{ComCam}$   | 0.024 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_B-g_ComCam.gi_ComCam.norder1.qa1.png) |
+| $V$    | $V - g_{ComCam} = -0.041 + -0.302 (g-i)_{ComCam}$ | 0.022 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_V-g_ComCam.gi_ComCam.norder1.qa1.png) |
+| $R$    | $R - r_{ComCam} = -0.142 + -0.095 (g-i)_{ComCam}$ | 0.015 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_R-r_ComCam.gi_ComCam.norder1.qa1.png) |
+| $I$    | $I - i_{ComCam} = -0.359 + -0.074 (g-i)_{ComCam}$ | 0.016 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_I-i_ComCam.gi_ComCam.norder1.qa1.png) |
+
+| Conversion     | Transformation Equation                         |   RMS | Applicable Color Range          | QA Plot                                                                                      |
+|:---------------|:------------------------------------------------|------:|:--------------------------------|:---------------------------------------------------------------------------------------------|
+| u_ComCam --> U | $U - u_{ComCam} = +0.057 (g-i)_{ComCam} -0.687$ | 0.088 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_U-u_ComCam.gi_ComCam.norder1.qa1.png) |
+| g_ComCam --> B | $B - g_{ComCam} = +0.284 (g-i)_{ComCam} 0.215$  | 0.024 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_B-g_ComCam.gi_ComCam.norder1.qa1.png) |
+| g_ComCam --> V | $V - g_{ComCam} = -0.302 (g-i)_{ComCam} -0.041$ | 0.022 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_V-g_ComCam.gi_ComCam.norder1.qa1.png) |
+| r_ComCam --> R | $R - r_{ComCam} = -0.095 (g-i)_{ComCam} -0.142$ | 0.015 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_R-r_ComCam.gi_ComCam.norder1.qa1.png) |
+| i_ComCam --> I | $I - i_{ComCam} = -0.074 (g-i)_{ComCam} -0.359$ | 0.016 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_I-i_ComCam.gi_ComCam.norder1.qa1.png) |
+
+| Conversion         | Transformation Equation                         |   RMS | Applicable Color Range          | QA Plot                                                                                      |
+|:-------------------|:------------------------------------------------|------:|:--------------------------------|:---------------------------------------------------------------------------------------------|
+| $u_{ComCam} \to U$ | $U - u_{ComCam} = +0.057 (g-i)_{ComCam} -0.687$ | 0.088 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_U-u_ComCam.gi_ComCam.norder1.qa1.png) |
+| $g_{ComCam} \to B$ | $B - g_{ComCam} = +0.284 (g-i)_{ComCam} 0.215$  | 0.024 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_B-g_ComCam.gi_ComCam.norder1.qa1.png) |
+| $g_{ComCam} \to V$ | $V - g_{ComCam} = -0.302 (g-i)_{ComCam} -0.041$ | 0.022 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_V-g_ComCam.gi_ComCam.norder1.qa1.png) |
+| $r_{ComCam} \to R$ | $R - r_{ComCam} = -0.095 (g-i)_{ComCam} -0.142$ | 0.015 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_R-r_ComCam.gi_ComCam.norder1.qa1.png) |
+| $i_{ComCam} \to I$ | $I - i_{ComCam} = -0.074 (g-i)_{ComCam} -0.359$ | 0.016 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_I-i_ComCam.gi_ComCam.norder1.qa1.png) |
+
+
 ## References
 
 ```{bibliography}
