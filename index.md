@@ -113,6 +113,15 @@ ComCam data were used to derive empirical transformations between DES and LSST C
 | $r_{ComCam} \to RP_{gaia}$ | $RP_{gaia} - r_{ComCam} = -0.233 (g-i)_{ComCam}^2 +0.146 (g-i)_{ComCam} -0.500$ | 0.036 | $-0.7 < (g-i)_{ComCam} \leq 3.0$ | [link](_static/plots/qaPlot.ComCam_to_GaiaDR3.fit.dmag_RP_gaia-r_ComCam.gi_ComCam.norder2.qa1.png) |
 
 
+| Conversion                | Transformation Equation                                                        |   RMS | Applicable Color Range           | QA Plot                                                                                            |
+|:--------------------------|:-------------------------------------------------------------------------------|------:|:---------------------------------|:---------------------------------------------------------------------------------------------------|
+| $G_{gaia} \to g_{ComCam}$ | $g_{ComCam} - G_{gaia} = -0.079 (BP-RP)_{gaia}^2 +1.113 (BP-RP)_{gaia} -0.480$ | 0.029 | $-0.2 < (BP-RP)_{gaia} \leq 3.1$ | [link](_static/plots/qaPlot.GaiaDR3_to_ComCam.fit.dmag_g_ComCam-G_gaia.BP_RP_gaia.norder2.qa1.png) |
+| $G_{gaia} \to r_{ComCam}$ | $r_{ComCam} - G_{gaia} = +0.305 (BP-RP)_{gaia}^2 -0.711 (BP-RP)_{gaia} +0.363$ | 0.014 | $-0.2 < (BP-RP)_{gaia} \leq 3.1$ | [link](_static/plots/qaPlot.GaiaDR3_to_ComCam.fit.dmag_r_ComCam-G_gaia.BP_RP_gaia.norder2.qa1.png) |
+| $G_{gaia} \to i_{ComCam}$ | $i_{ComCam} - G_{gaia} = +0.099 (BP-RP)_{gaia}^2 -0.672 (BP-RP)_{gaia} +0.343$ | 0.009 | $-0.2 < (BP-RP)_{gaia} \leq 3.1$ | [link](_static/plots/qaPlot.GaiaDR3_to_ComCam.fit.dmag_i_ComCam-G_gaia.BP_RP_gaia.norder2.qa1.png) |
+| $G_{gaia} \to z_{ComCam}$ | $z_{ComCam} - G_{gaia} = +0.034 (BP-RP)_{gaia}^2 -0.747 (BP-RP)_{gaia} +0.416$ | 0.014 | $-0.2 < (BP-RP)_{gaia} \leq 3.1$ | [link](_static/plots/qaPlot.GaiaDR3_to_ComCam.fit.dmag_z_ComCam-G_gaia.BP_RP_gaia.norder2.qa1.png) |
+| $G_{gaia} \to y_{ComCam}$ | $y_{ComCam} - G_{gaia} = +0.041 (BP-RP)_{gaia}^2 -0.906 (BP-RP)_{gaia} +0.527$ | 0.014 | $-0.2 < (BP-RP)_{gaia} \leq 3.1$ | [link](_static/plots/qaPlot.GaiaDR3_to_ComCam.fit.dmag_y_ComCam-G_gaia.BP_RP_gaia.norder2.qa1.png) |
+
+
 ## 2. Lookup Table (Interpolation) Transformations
 
 ### 2.1. Overview
