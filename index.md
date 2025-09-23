@@ -43,6 +43,8 @@ Synthetic magnitudes were derived by integrating spectrophotometric spectra from
 
 ### 1.3. ComCam Transformations
 
+#### 1.3.1 ComCam <--> DES
+
 ComCam data were used to derive empirical transformations between DES and LSST ComCam filters. All $S/N >$ 5 point sources in the DES footprint were selected, including quasars and non-standard stars.
 
 :::{table} ComCam to DES Transformation Equations (Version `v_2025_08_22`).
@@ -57,7 +59,28 @@ ComCam data were used to derive empirical transformations between DES and LSST C
 :::
 
 
+#### 1.3.2 ComCam <--> Euclid 
 
+| Conversion                    | Transformation Equation                                                                |   RMS | Applicable Color Range             | QA Plot                                                                                                |
+|:------------------------------|:---------------------------------------------------------------------------------------|------:|:-----------------------------------|:-------------------------------------------------------------------------------------------------------|
+| $VIS_{EUCLID} \to g_{ComCam}$ | $g_{ComCam} - VIS_{EUCLID} = +0.390 (VIS-Y)_{Euclid}^2 +1.465 (VIS-Y)_{Euclid} +0.051$ | 0.069 | $-0.1 < (VIS-Y)_{Euclid} \leq 0.9$ | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_g_ComCam-VIS_EUCLID.VISY_EUCLID.norder2.qa1.png) |
+| $VIS_{EUCLID} \to g_{ComCam}$ | $g_{ComCam} - VIS_{EUCLID} = +0.287 (VIS-Y)_{Euclid}^2 +0.488 (VIS-Y)_{Euclid} +0.986$ | 0.073 | $0.9 < (VIS-Y)_{Euclid} \leq 2.3$  | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_g_ComCam-VIS_EUCLID.VISY_EUCLID.norder2.qa1.png) |
+| $VIS_{EUCLID} \to r_{ComCam}$ | $r_{ComCam} - VIS_{EUCLID} = +0.381 (VIS-Y)_{Euclid}^2 +0.163 (VIS-Y)_{Euclid} -0.059$ | 0.042 | $-0.1 < (VIS-Y)_{Euclid} \leq 2.3$ | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_r_ComCam-VIS_EUCLID.VISY_EUCLID.norder2.qa1.png) |
+| $VIS_{EUCLID} \to i_{ComCam}$ | $i_{ComCam} - VIS_{EUCLID} = +0.091 (VIS-Y)_{Euclid}^2 -0.345 (VIS-Y)_{Euclid} -0.054$ | 0.019 | $-0.1 < (VIS-Y)_{Euclid} \leq 2.3$ | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_i_ComCam-VIS_EUCLID.VISY_EUCLID.norder2.qa1.png) |
+| $Y_{EUCLID} \to z_{ComCam}$   | $z_{ComCam} - Y_{EUCLID} = -0.006 (VIS-Y)_{Euclid}^2 +0.366 (VIS-Y)_{Euclid} -0.026$   | 0.023 | $-0.1 < (VIS-Y)_{Euclid} \leq 2.3$ | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_z_ComCam-Y_EUCLID.VISY_EUCLID.norder2.qa1.png)   |
+| $Y_{EUCLID} \to y_{ComCam}$   | $y_{ComCam} - Y_{EUCLID} = +0.238 (Y-H)_{Euclid}^2 +0.290 (Y-H)_{Euclid} +0.094$       | 0.042 | $-0.6 < (Y-H)_{Euclid} \leq 0.0$   | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_y_ComCam-Y_EUCLID.YH_EUCLID.norder2.qa1.png)     |
+| $Y_{EUCLID} \to y_{ComCam}$   | $y_{ComCam} - Y_{EUCLID} = +0.095 (Y-H)_{Euclid}^2 +0.031 (Y-H)_{Euclid} +0.173$       | 0.049 | $0.0 < (Y-H)_{Euclid} \leq 0.6$    | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_y_ComCam-Y_EUCLID.YH_EUCLID.norder2.qa1.png)     |
+
+
+#### 1.3.3 ComCam <--> Johnson-Cousins UBVR_cI_c
+
+| Conversion         | Transformation Equation                         |   RMS | Applicable Color Range          | QA Plot                                                                                      |
+|:-------------------|:------------------------------------------------|------:|:--------------------------------|:---------------------------------------------------------------------------------------------|
+| $u_{ComCam} \to U$ | $U - u_{ComCam} = +0.057 (g-i)_{ComCam} -0.687$ | 0.088 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_U-u_ComCam.gi_ComCam.norder1.qa1.png) |
+| $g_{ComCam} \to B$ | $B - g_{ComCam} = +0.284 (g-i)_{ComCam} +0.215$ | 0.024 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_B-g_ComCam.gi_ComCam.norder1.qa1.png) |
+| $g_{ComCam} \to V$ | $V - g_{ComCam} = -0.302 (g-i)_{ComCam} -0.041$ | 0.022 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_V-g_ComCam.gi_ComCam.norder1.qa1.png) |
+| $r_{ComCam} \to R$ | $R - r_{ComCam} = -0.095 (g-i)_{ComCam} -0.142$ | 0.015 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_R-r_ComCam.gi_ComCam.norder1.qa1.png) |
+| $i_{ComCam} \to I$ | $I - i_{ComCam} = -0.074 (g-i)_{ComCam} -0.359$ | 0.016 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_I-i_ComCam.gi_ComCam.norder1.qa1.png) |
    
 
 ## 2. Lookup Table (Interpolation) Transformations
@@ -109,27 +132,9 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 :::
 
 
-## Additional Relations (to be moved)
-
-| Conversion         | Transformation Equation                         |   RMS | Applicable Color Range          | QA Plot                                                                                      |
-|:-------------------|:------------------------------------------------|------:|:--------------------------------|:---------------------------------------------------------------------------------------------|
-| $u_{ComCam} \to U$ | $U - u_{ComCam} = +0.057 (g-i)_{ComCam} -0.687$ | 0.088 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_U-u_ComCam.gi_ComCam.norder1.qa1.png) |
-| $g_{ComCam} \to B$ | $B - g_{ComCam} = +0.284 (g-i)_{ComCam} +0.215$ | 0.024 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_B-g_ComCam.gi_ComCam.norder1.qa1.png) |
-| $g_{ComCam} \to V$ | $V - g_{ComCam} = -0.302 (g-i)_{ComCam} -0.041$ | 0.022 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_V-g_ComCam.gi_ComCam.norder1.qa1.png) |
-| $r_{ComCam} \to R$ | $R - r_{ComCam} = -0.095 (g-i)_{ComCam} -0.142$ | 0.015 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_R-r_ComCam.gi_ComCam.norder1.qa1.png) |
-| $i_{ComCam} \to I$ | $I - i_{ComCam} = -0.074 (g-i)_{ComCam} -0.359$ | 0.016 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_I-i_ComCam.gi_ComCam.norder1.qa1.png) |
 
 
 
-| Conversion                    | Transformation Equation                                                                |   RMS | Applicable Color Range             | QA Plot                                                                                                |
-|:------------------------------|:---------------------------------------------------------------------------------------|------:|:-----------------------------------|:-------------------------------------------------------------------------------------------------------|
-| $VIS_{EUCLID} \to g_{ComCam}$ | $g_{ComCam} - VIS_{EUCLID} = +0.390 (VIS-Y)_{Euclid}^2 +1.465 (VIS-Y)_{Euclid} +0.051$ | 0.069 | $-0.1 < (VIS-Y)_{Euclid} \leq 0.9$ | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_g_ComCam-VIS_EUCLID.VISY_EUCLID.norder2.qa1.png) |
-| $VIS_{EUCLID} \to g_{ComCam}$ | $g_{ComCam} - VIS_{EUCLID} = +0.287 (VIS-Y)_{Euclid}^2 +0.488 (VIS-Y)_{Euclid} +0.986$ | 0.073 | $0.9 < (VIS-Y)_{Euclid} \leq 2.3$  | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_g_ComCam-VIS_EUCLID.VISY_EUCLID.norder2.qa1.png) |
-| $VIS_{EUCLID} \to r_{ComCam}$ | $r_{ComCam} - VIS_{EUCLID} = +0.381 (VIS-Y)_{Euclid}^2 +0.163 (VIS-Y)_{Euclid} -0.059$ | 0.042 | $-0.1 < (VIS-Y)_{Euclid} \leq 2.3$ | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_r_ComCam-VIS_EUCLID.VISY_EUCLID.norder2.qa1.png) |
-| $VIS_{EUCLID} \to i_{ComCam}$ | $i_{ComCam} - VIS_{EUCLID} = +0.091 (VIS-Y)_{Euclid}^2 -0.345 (VIS-Y)_{Euclid} -0.054$ | 0.019 | $-0.1 < (VIS-Y)_{Euclid} \leq 2.3$ | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_i_ComCam-VIS_EUCLID.VISY_EUCLID.norder2.qa1.png) |
-| $Y_{EUCLID} \to z_{ComCam}$   | $z_{ComCam} - Y_{EUCLID} = -0.006 (VIS-Y)_{Euclid}^2 +0.366 (VIS-Y)_{Euclid} -0.026$   | 0.023 | $-0.1 < (VIS-Y)_{Euclid} \leq 2.3$ | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_z_ComCam-Y_EUCLID.VISY_EUCLID.norder2.qa1.png)   |
-| $Y_{EUCLID} \to y_{ComCam}$   | $y_{ComCam} - Y_{EUCLID} = +0.238 (Y-H)_{Euclid}^2 +0.290 (Y-H)_{Euclid} +0.094$       | 0.042 | $-0.6 < (Y-H)_{Euclid} \leq 0.0$   | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_y_ComCam-Y_EUCLID.YH_EUCLID.norder2.qa1.png)     |
-| $Y_{EUCLID} \to y_{ComCam}$   | $y_{ComCam} - Y_{EUCLID} = +0.095 (Y-H)_{Euclid}^2 +0.031 (Y-H)_{Euclid} +0.173$       | 0.049 | $0.0 < (Y-H)_{Euclid} \leq 0.6$    | [link](_static/plots/qaPlot.Euclid_to_ComCam.fit.dmag_y_ComCam-Y_EUCLID.YH_EUCLID.norder2.qa1.png)     |
 
 ## References
 
