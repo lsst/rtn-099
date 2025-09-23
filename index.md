@@ -104,6 +104,15 @@ ComCam data were used to derive empirical transformations between DES and LSST C
 | $I \to y_{ComCam}$ | $y_{ComCam} - I = -0.559 (R-I) +0.522$ | 0.026 | $0.2 < (R-I) \leq 1.4$   | [link](_static/plots/qaPlot.Stetson_to_ComCam.fit.dmag_y_ComCam-I.RI.norder1.qa1.png) |   
 
 
+#### 1.3.4 ComCam <--> GAIA DR3
+
+| Conversion                 | Transformation Equation                                                         |   RMS | Applicable Color Range           | QA Plot                                                                                            |
+|:---------------------------|:--------------------------------------------------------------------------------|------:|:---------------------------------|:---------------------------------------------------------------------------------------------------|
+| $g_{ComCam} \to G_{gaia}$  | $G_{gaia} - g_{ComCam} = -0.033 (g-i)_{ComCam}^2 -0.610 (g-i)_{ComCam} -0.054$  | 0.008 | $-0.7 < (g-i)_{ComCam} \leq 3.0$ | [link](_static/plots/qaPlot.ComCam_to_GaiaDR3.fit.dmag_G_gaia-g_ComCam.gi_ComCam.norder2.qa1.png)  |
+| $g_{ComCam} \to BP_{gaia}$ | $BP_{gaia} - g_{ComCam} = +0.081 (g-i)_{ComCam}^2 -0.449 (g-i)_{ComCam} +0.162$ | 0.027 | $-0.7 < (g-i)_{ComCam} \leq 3.0$ | [link](_static/plots/qaPlot.ComCam_to_GaiaDR3.fit.dmag_BP_gaia-g_ComCam.gi_ComCam.norder2.qa1.png) |
+| $r_{ComCam} \to RP_{gaia}$ | $RP_{gaia} - r_{ComCam} = -0.233 (g-i)_{ComCam}^2 +0.146 (g-i)_{ComCam} -0.500$ | 0.036 | $-0.7 < (g-i)_{ComCam} \leq 3.0$ | [link](_static/plots/qaPlot.ComCam_to_GaiaDR3.fit.dmag_RP_gaia-r_ComCam.gi_ComCam.norder2.qa1.png) |
+
+
 ## 2. Lookup Table (Interpolation) Transformations
 
 ### 2.1. Overview
