@@ -81,7 +81,16 @@ ComCam data were used to derive empirical transformations between DES and LSST C
 | $g_{ComCam} \to V$ | $V - g_{ComCam} = -0.302 (g-i)_{ComCam} -0.041$ | 0.022 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_V-g_ComCam.gi_ComCam.norder1.qa1.png) |
 | $r_{ComCam} \to R$ | $R - r_{ComCam} = -0.095 (g-i)_{ComCam} -0.142$ | 0.015 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_R-r_ComCam.gi_ComCam.norder1.qa1.png) |
 | $i_{ComCam} \to I$ | $I - i_{ComCam} = -0.074 (g-i)_{ComCam} -0.359$ | 0.016 | $0.2 < (g-i)_{ComCam} \leq 2.5$ | [link](_static/plots/qaPlot.ComCam_to_Stetson.fit.dmag_I-i_ComCam.gi_ComCam.norder1.qa1.png) |
-   
+
+
+| Conversion         | Transformation Equation                |   RMS | Applicable Color Range   | QA Plot                                                                               |
+|:-------------------|:---------------------------------------|------:|:-------------------------|:--------------------------------------------------------------------------------------|
+| $V \to g_{ComCam}$ | $g_{ComCam} - V = +0.503 (B-V) -0.082$ | 0.017 | $0.3 < (B-V) \leq 1.7$   | [link](_static/plots/qaPlot.Stetson_to_ComCam.fit.dmag_g_ComCam-V.BV.norder1.qa1.png) |
+| $R \to r_{ComCam}$ | $r_{ComCam} - R = +0.223 (R-I) +0.122$ | 0.014 | $0.2 < (R-I) \leq 1.4$   | [link](_static/plots/qaPlot.Stetson_to_ComCam.fit.dmag_r_ComCam-R.RI.norder1.qa1.png) |
+| $I \to i_{ComCam}$ | $i_{ComCam} - I = +0.178 (R-I) +0.341$ | 0.01  | $0.2 < (R-I) \leq 1.4$   | [link](_static/plots/qaPlot.Stetson_to_ComCam.fit.dmag_i_ComCam-I.RI.norder1.qa1.png) |
+| $I \to z_{ComCam}$ | $z_{ComCam} - I = -0.300 (R-I) +0.456$ | 0.013 | $0.2 < (R-I) \leq 1.4$   | [link](_static/plots/qaPlot.Stetson_to_ComCam.fit.dmag_z_ComCam-I.RI.norder1.qa1.png) |
+| $I \to y_{ComCam}$ | $y_{ComCam} - I = -0.559 (R-I) +0.522$ | 0.026 | $0.2 < (R-I) \leq 1.4$   | [link](_static/plots/qaPlot.Stetson_to_ComCam.fit.dmag_y_ComCam-I.RI.norder1.qa1.png) |   
+
 
 ## 2. Lookup Table (Interpolation) Transformations
 
