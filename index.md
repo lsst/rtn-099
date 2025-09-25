@@ -122,6 +122,18 @@ ComCam data were used to derive empirical transformations between DES and LSST C
 | $G_{gaia} \to y_{ComCam}$ | $y_{ComCam} - G_{gaia} = +0.041 (BP-RP)_{gaia}^2 -0.906 (BP-RP)_{gaia} +0.527$ | 0.014 | $-0.2 < (BP-RP)_{gaia} \leq 3.1$ | [link](_static/plots/qaPlot.GaiaDR3_to_ComCam.fit.dmag_y_ComCam-G_gaia.BP_RP_gaia.norder2.qa1.png) |
 
 
+#### 1.3.4 ComCam <--> SDSS DR18
+
+| Conversion                  | Transformation Equation                                |   RMS | Applicable Color Range        | QA Plot                                                                                        |
+|:----------------------------|:-------------------------------------------------------|------:|:------------------------------|:-----------------------------------------------------------------------------------------------|
+| $g_{sdss} \to g_{ComCam}$   | $g_{ComCam} - g_{sdss} = -0.062 (g-i)_{sdss} +0.007$   | 0.015 | $0.2 < (g-i)_{sdss} \leq 3.1$ | [link](_static/plots/qaPlot.SDSS_to_ComCam.fit.dmag_g_ComCam-g_sdss.gi_sdss.norder1.qa1.png)   |
+| $r_{sdss} \to r_{ComCam}$   | $r_{ComCam} - r_{sdss} = -0.007 (g-i)_{sdss} +0.005$   | 0.011 | $0.2 < (g-i)_{sdss} \leq 3.1$ | [link](_static/plots/qaPlot.SDSS_to_ComCam.fit.dmag_r_ComCam-r_sdss.gi_sdss.norder1.qa1.png)   |
+| $i_{sdss} \to i_{ComCam}$   | $i_{ComCam} - i_{sdss} = -0.010 (g-i)_{sdss} +0.019$   | 0.012 | $0.2 < (g-i)_{sdss} \leq 3.1$ | [link](_static/plots/qaPlot.SDSS_to_ComCam.fit.dmag_i_ComCam-i_sdss.gi_sdss.norder1.qa1.png)   |
+| $z_{sdss} \to z_{ComCam}$   | $z_{ComCam} - z_{sdss} = +0.020 (g-i)_{sdss} +0.032$   | 0.017 | $0.2 < (g-i)_{sdss} \leq 3.1$ | [link](_static/plots/qaPlot.SDSS_to_ComCam.fit.dmag_z_ComCam-z_sdss.gi_sdss.norder1.qa1.png)   |
+| $gi_{sdss} \to gi_{ComCam}$ | $gi_{ComCam} - gi_{sdss} = -0.064 (g-i)_{sdss} -0.002$ | 0.021 | $0.2 < (g-i)_{sdss} \leq 3.1$ | [link](_static/plots/qaPlot.SDSS_to_ComCam.fit.dmag_gi_ComCam-gi_sdss.gi_sdss.norder1.qa1.png) |
+
+
+
 ## 2. Lookup Table (Interpolation) Transformations
 
 ### 2.1. Overview
