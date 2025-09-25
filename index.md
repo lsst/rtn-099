@@ -84,7 +84,7 @@ ComCam data were used to derive empirical transformations between DES and LSST C
 | $y_{ComCam} \to J_{EUCLID}$   | $J_{EUCLID} - y_{ComCam} = +0.490 (z-y)_{ComCam}^2 -0.889 (z-y)_{ComCam} -0.165$   | 0.04  | $0.1 < (z-y)_{ComCam} \leq 0.7$  | [link](_static/plots/qaPlot.ComCam_to_Euclid.fit.dmag_J_EUCLID-y_ComCam.zy_ComCam.norder2.qa1.png)   |
 
 
-#### 1.3.3 ComCam <--> Johnson-Cousins UBVR_cI_c
+#### 1.3.3 ComCam <--> Johnson-Cousins UBVRcIc
 
 | Conversion         | Transformation Equation                         |   RMS | Applicable Color Range          | QA Plot                                                                                      |
 |:-------------------|:------------------------------------------------|------:|:--------------------------------|:---------------------------------------------------------------------------------------------|
@@ -179,6 +179,8 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 
 ### 2.2 ComCam Transformations
 
+#### 2.2.1 ComCam <--> DES DR2
+
 :::{table} ComCam DP1 to DES DR2 (Version `v_2025_08_22`).
 :widths: auto
 
@@ -190,10 +192,23 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 | ComCam z,i-z to DES z      |  0.007   | $-0.1 < (i-z)_{DES} < 0.8$  | [link](_static/plots/qaPlot_transInterp.ComCam_to_des.z_iz_ComCam.png)     | [link](_static/data/transInterp.ComCam_to_des.z_iz_ComCam.csv) |
 :::
 
+#### 2.2.1 ComCam <--> Euclid
+
+| Conversion                    |   RMS | Applicable Color Range        | QA Plot                                                                            | Lookup Table                                                               |
+|:------------------------------|------:|:------------------------------|:-----------------------------------------------------------------------------------|:---------------------------------------------------------------------------|
+| $r_{ComCam} \to VIS_{EUCLID}$ | 0.038 | $0.3 < (g-i)_{ComCam} < 3.3$  | [link](_static/plots/qaPlot_transInterp.ComCam_to_Euclid.VIS_EUCLID_gi_ComCam.png) | [link](_static/data/transInterp.ComCam_to_Euclid.VIS_EUCLID_gi_ComCam.csv) |
+| $y_{ComCam} \to Y_{EUCLID}$   | 0.031 | $-0.1 < (z-y)_{ComCam} < 0.5$ | [link](_static/plots/qaPlot_transInterp.ComCam_to_Euclid.Y_EUCLID_zy_ComCam.png)   | [link](_static/data/transInterp.ComCam_to_Euclid.Y_EUCLID_zy_ComCam.csv)   |
+| $y_{ComCam} \to H_{EUCLID}$   | 0.068 | $-0.1 < (z-y)_{ComCam} < 0.5$ | [link](_static/plots/qaPlot_transInterp.ComCam_to_Euclid.H_EUCLID_zy_ComCam.png)   | [link](_static/data/transInterp.ComCam_to_Euclid.H_EUCLID_zy_ComCam.csv)   |
+| $y_{ComCam} \to J_{EUCLID}$   | 0.046 | $-0.1 < (z-y)_{ComCam} < 0.5$ | [link](_static/plots/qaPlot_transInterp.ComCam_to_Euclid.J_EUCLID_zy_ComCam.png)   | [link](_static/data/transInterp.ComCam_to_Euclid.J_EUCLID_zy_ComCam.csv)   |
 
 
-
-
+| Conversion                    |   RMS | Applicable Color Range         | QA Plot                                                                            | Lookup Table                                                               |
+|:------------------------------|------:|:-------------------------------|:-----------------------------------------------------------------------------------|:---------------------------------------------------------------------------|
+| $VIS_{EUCLID} \to g_{ComCam}$ | 0.075 | $0.1 < (VIS-Y)_{Euclid} < 1.9$ | [link](_static/plots/qaPlot_transInterp.Euclid_to_ComCam.g_ComCam_VISY_EUCLID.png) | [link](_static/data/transInterp.Euclid_to_ComCam.g_ComCam_VISY_EUCLID.csv) |
+| $VIS_{EUCLID} \to r_{ComCam}$ | 0.034 | $0.1 < (VIS-Y)_{Euclid} < 1.9$ | [link](_static/plots/qaPlot_transInterp.Euclid_to_ComCam.r_ComCam_VISY_EUCLID.png) | [link](_static/data/transInterp.Euclid_to_ComCam.r_ComCam_VISY_EUCLID.csv) |
+| $VIS_{EUCLID} \to i_{ComCam}$ | 0.017 | $0.1 < (VIS-Y)_{Euclid} < 1.9$ | [link](_static/plots/qaPlot_transInterp.Euclid_to_ComCam.i_ComCam_VISY_EUCLID.png) | [link](_static/data/transInterp.Euclid_to_ComCam.i_ComCam_VISY_EUCLID.csv) |
+| $Y_{EUCLID} \to z_{ComCam}$   | 0.018 | $0.1 < (VIS-Y)_{Euclid} < 1.9$ | [link](_static/plots/qaPlot_transInterp.Euclid_to_ComCam.z_ComCam_VISY_EUCLID.png) | [link](_static/data/transInterp.Euclid_to_ComCam.z_ComCam_VISY_EUCLID.csv) |
+| $Y_{EUCLID} \to y_{ComCam}$   | 0.045 | $-0.4 < (Y-H)_{Euclid} < 0.4$  | [link](_static/plots/qaPlot_transInterp.Euclid_to_ComCam.y_ComCam_YH_EUCLID.png)   | [link](_static/data/transInterp.Euclid_to_ComCam.y_ComCam_YH_EUCLID.csv)   |
 
 ## References
 
