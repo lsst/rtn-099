@@ -133,6 +133,14 @@ ComCam data were used to derive empirical transformations between DES and LSST C
 | $gi_{sdss} \to gi_{ComCam}$ | $gi_{ComCam} - gi_{sdss} = -0.064 (g-i)_{sdss} -0.002$ | 0.021 | $0.2 < (g-i)_{sdss} \leq 3.1$ | [link](_static/plots/qaPlot.SDSS_to_ComCam.fit.dmag_gi_ComCam-gi_sdss.gi_sdss.norder1.qa1.png) |
 
 
+| Conversion                  | Transformation Equation                                  |   RMS | Applicable Color Range          | QA Plot                                                                                          |
+|:----------------------------|:---------------------------------------------------------|------:|:--------------------------------|:-------------------------------------------------------------------------------------------------|
+| $g_{ComCam} \to g_{sdss}$   | $g_{sdss} - g_{ComCam} = +0.066 (g-i)_{ComCam} -0.006$   | 0.015 | $0.2 < (g-i)_{ComCam} \leq 3.0$ | [link](_static/plots/qaPlot.ComCam_to_SDSS.fit.dmag_g_sdss-g_ComCam.gi_ComCam.norder1.qa1.png)   |
+| $r_{ComCam} \to r_{sdss}$   | $r_{sdss} - r_{ComCam} = +0.007 (g-i)_{ComCam} -0.005$   | 0.011 | $0.2 < (g-i)_{ComCam} \leq 3.0$ | [link](_static/plots/qaPlot.ComCam_to_SDSS.fit.dmag_r_sdss-r_ComCam.gi_ComCam.norder1.qa1.png)   |
+| $i_{ComCam} \to i_{sdss}$   | $i_{sdss} - i_{ComCam} = +0.012 (g-i)_{ComCam} -0.020$   | 0.012 | $0.2 < (g-i)_{ComCam} \leq 3.0$ | [link](_static/plots/qaPlot.ComCam_to_SDSS.fit.dmag_i_sdss-i_ComCam.gi_ComCam.norder1.qa1.png)   |
+| $z_{ComCam} \to z_{sdss}$   | $z_{sdss} - z_{ComCam} = -0.022 (g-i)_{ComCam} -0.031$   | 0.017 | $0.2 < (g-i)_{ComCam} \leq 3.0$ | [link](_static/plots/qaPlot.ComCam_to_SDSS.fit.dmag_z_sdss-z_ComCam.gi_ComCam.norder1.qa1.png)   |
+| $gi_{ComCam} \to gi_{sdss}$ | $gi_{sdss} - gi_{ComCam} = +0.065 (g-i)_{ComCam} +0.005$ | 0.023 | $0.2 < (g-i)_{ComCam} \leq 3.0$ | [link](_static/plots/qaPlot.ComCam_to_SDSS.fit.dmag_gi_sdss-gi_ComCam.gi_ComCam.norder1.qa1.png) |
+
 
 ## 2. Lookup Table (Interpolation) Transformations
 
