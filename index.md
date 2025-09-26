@@ -4,10 +4,6 @@
 This technical note provides photometric transformation relations between the Vera C. Rubin Observatory's LSST and ComCam systems and other photometric systems. These transformations are derived using both synthetic and empirical data and are intended to support calibration and comparison across survey systems. We present both polynomial equations and lookup-table-based methods, depending on the available data and desired accuracy. The transformations are generally valid for stars with typical spectral energy distributions (SEDs), and caution should be used when applying them to objects with strong emission lines or atypical colors.
 ```
 
-## Add content here
-
-See the [Documenteer documentation](https://documenteer.lsst.io/technotes/index.html) for tips on how to write and configure your new technote.
-
 ## 0. General Overview
 
 These transformations were derived by matching data from other surveys with the Rubin LSST DP1 {cite}`RTN-095`.  This technical note provides a general overview of the results from the calculation of transformations to and from the Rubin LSST DP1 photometric system.  Details of the process will be presented in on or more future journal articles (Porter et al., _in preparation_, etc.).  
