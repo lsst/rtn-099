@@ -192,7 +192,7 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 | ComCam z,i-z to DES z      |  0.007   | $-0.1 < (i-z)_{DES} < 0.8$  | [link](_static/plots/qaPlot_transInterp.ComCam_to_des.z_iz_ComCam.png)     | [link](_static/data/transInterp.ComCam_to_des.z_iz_ComCam.csv) |
 :::
 
-#### 2.2.1 ComCam <--> Euclid
+#### 2.2.2 ComCam <--> Euclid
 
 | Conversion                    |   RMS | Applicable Color Range        | QA Plot                                                                            | Lookup Table                                                               |
 |:------------------------------|------:|:------------------------------|:-----------------------------------------------------------------------------------|:---------------------------------------------------------------------------|
