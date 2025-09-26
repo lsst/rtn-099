@@ -137,6 +137,16 @@ ComCam data were used to derive empirical transformations between DES and LSST C
 | $z_{ComCam} \to z_{sdss}$   | $z_{sdss} - z_{ComCam} = -0.022 (g-i)_{ComCam} -0.031$   | 0.017 | $0.2 < (g-i)_{ComCam} \leq 3.0$ | [link](_static/plots/qaPlot.ComCam_to_SDSS.fit.dmag_z_sdss-z_ComCam.gi_ComCam.norder1.qa1.png)   |
 | $(g-i)_{ComCam} \to (g-i)_{sdss}$ | $(g-i)_{sdss} = +1.065 (g-i)_{ComCam} +0.005$ | 0.023 | $0.2 < (g-i)_{ComCam} \leq 3.0$ | [link](_static/plots/qaPlot.ComCam_to_SDSS.fit.dmag_gi_sdss-gi_ComCam.gi_ComCam.norder1.qa1.png) |
 
+#### 1.3.5 ComCam <--> PanStarrs1 DR2
+
+| Conversion               | Transformation Equation                               |   RMS | Applicable Color Range           | QA Plot                                                                                         |
+|:-------------------------|:------------------------------------------------------|------:|:---------------------------------|:------------------------------------------------------------------------------------------------|
+| $g_{ComCam} \to g_{ps1}$ | $g_{ps1} - g_{ComCam} = -0.035 (g-i)_{ComCam} -0.019$ | 0.014 | $-2.2 < (g-i)_{ComCam} \leq 3.0$ | [link](_static/plots/qaPlot.ComCam_to_PS1DR2.fit.dmag_g_ps1-g_ComCam.gi_ComCam.norder1.qa1.png) |
+| $r_{ComCam} \to r_{ps1}$ | $r_{ps1} - r_{ComCam} = +0.004 (g-i)_{ComCam} -0.001$ | 0.011 | $-2.2 < (g-i)_{ComCam} \leq 3.0$ | [link](_static/plots/qaPlot.ComCam_to_PS1DR2.fit.dmag_r_ps1-r_ComCam.gi_ComCam.norder1.qa1.png) |
+| $i_{ComCam} \to i_{ps1}$ | $i_{ps1} - i_{ComCam} = +0.014 (g-i)_{ComCam} -0.016$ | 0.01  | $-2.2 < (g-i)_{ComCam} \leq 3.0$ | [link](_static/plots/qaPlot.ComCam_to_PS1DR2.fit.dmag_i_ps1-i_ComCam.gi_ComCam.norder1.qa1.png) |
+| $z_{ComCam} \to z_{ps1}$ | $z_{ps1} - z_{ComCam} = +0.020 (i-z)_{ComCam} +0.003$ | 0.009 | $-1.8 < (i-z)_{ComCam} \leq 1.5$ | [link](_static/plots/qaPlot.ComCam_to_PS1DR2.fit.dmag_z_ps1-z_ComCam.iz_ComCam.norder1.qa1.png) |
+| $y_{ComCam} \to y_{ps1}$ | $y_{ps1} - y_{ComCam} = +0.057 (z-y)_{ComCam} -0.012$ | 0.013 | $-1.7 < (z-y)_{ComCam} \leq 3.0$ | [link](_static/plots/qaPlot.ComCam_to_PS1DR2.fit.dmag_y_ps1-y_ComCam.zy_ComCam.norder1.qa1.png) |
+
 
 ## 2. Lookup Table (Interpolation) Transformations
 
