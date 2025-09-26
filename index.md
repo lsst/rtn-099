@@ -225,13 +225,22 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 | $Y_{EUCLID} \to z_{ComCam}$   | 0.018 | $0.1 < (VIS-Y)_{Euclid} < 1.9$ | [link](_static/plots/qaPlot_transInterp.Euclid_to_ComCam.z_ComCam_VISY_EUCLID.png) | [link](_static/data/transInterp.Euclid_to_ComCam.z_ComCam_VISY_EUCLID.csv) |
 | $Y_{EUCLID} \to y_{ComCam}$   | 0.045 | $-0.4 < (Y-H)_{Euclid} < 0.4$  | [link](_static/plots/qaPlot_transInterp.Euclid_to_ComCam.y_ComCam_YH_EUCLID.png)   | [link](_static/data/transInterp.Euclid_to_ComCam.y_ComCam_YH_EUCLID.csv)   |
 
-#### 2.2. ComCam <--> GAIA DR3
+#### 2.2.3 ComCam <--> GAIA DR3
 
 | Conversion                 |   RMS | Applicable Color Range       | QA Plot                                                                                | Lookup Table                                                                   |
 |:---------------------------|------:|:-----------------------------|:---------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------|
 | $r_{ComCam} \to G_{gaia}$  | 0.014 | $0.3 < (g-i)_{ComCam} < 2.8$ | [link](_static/plots/qaPlot_transInterp.ComCam_to_GaiaDR3_ECDFS.G_gaia_gi_ComCam.png)  | [link](_static/data/transInterp.ComCam_to_GaiaDR3_ECDFS.G_gaia_gi_ComCam.csv)  |
 | $g_{ComCam} \to BP_{gaia}$ | 0.013 | $0.3 < (g-i)_{ComCam} < 2.8$ | [link](_static/plots/qaPlot_transInterp.ComCam_to_GaiaDR3_ECDFS.BP_gaia_gi_ComCam.png) | [link](_static/data/transInterp.ComCam_to_GaiaDR3_ECDFS.BP_gaia_gi_ComCam.csv) |
 | $r_{ComCam} \to RP_{gaia}$ | 0.022 | $0.3 < (g-i)_{ComCam} < 2.8$ | [link](_static/plots/qaPlot_transInterp.ComCam_to_GaiaDR3_ECDFS.RP_gaia_gi_ComCam.png) | [link](_static/data/transInterp.ComCam_to_GaiaDR3_ECDFS.RP_gaia_gi_ComCam.csv) |
+
+
+| Conversion                |   RMS | Applicable Color Range       | QA Plot                                                                                  | Lookup Table                                                                     |
+|:--------------------------|------:|:-----------------------------|:-----------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------|
+| $G_{gaia} \to g_{ComCam}$ | 0.016 | $0.6 < (BP-RP)_{gaia} < 2.9$ | [link](_static/plots/qaPlot_transInterp.GaiaDR3_to_ComCam_ECDFS.g_ComCam_BP_RP_gaia.png) | [link](_static/data/transInterp.GaiaDR3_to_ComCam_ECDFS.g_ComCam_BP_RP_gaia.csv) |
+| $G_{gaia} \to r_{ComCam}$ | 0.01  | $0.6 < (BP-RP)_{gaia} < 2.9$ | [link](_static/plots/qaPlot_transInterp.GaiaDR3_to_ComCam_ECDFS.r_ComCam_BP_RP_gaia.png) | [link](_static/data/transInterp.GaiaDR3_to_ComCam_ECDFS.r_ComCam_BP_RP_gaia.csv) |
+| $G_{gaia} \to i_{ComCam}$ | 0.008 | $0.6 < (BP-RP)_{gaia} < 2.9$ | [link](_static/plots/qaPlot_transInterp.GaiaDR3_to_ComCam_ECDFS.i_ComCam_BP_RP_gaia.png) | [link](_static/data/transInterp.GaiaDR3_to_ComCam_ECDFS.i_ComCam_BP_RP_gaia.csv) |
+| $G_{gaia} \to y_{ComCam}$ | 0.016 | $0.6 < (BP-RP)_{gaia} < 2.9$ | [link](_static/plots/qaPlot_transInterp.GaiaDR3_to_ComCam_ECDFS.y_ComCam_BP_RP_gaia.png) | [link](_static/data/transInterp.GaiaDR3_to_ComCam_ECDFS.y_ComCam_BP_RP_gaia.csv) |
+
 
 ## References
 
