@@ -118,6 +118,7 @@ ComCam data were used to derive empirical transformations between DES and LSST C
 
 | Conversion                    | Transformation Equation                                                            |   RMS | Applicable Color Range           | QA Plot                                                                                              |
 |:------------------------------|:-----------------------------------------------------------------------------------|------:|:---------------------------------|:-----------------------------------------------------------------------------------------------------|
+|      &nbsp;              |                                                    |       |                               |       |
 | $r_{ComCam} \to VIS_{EUCLID}$ | $VIS_{EUCLID} - r_{ComCam} = -0.047 (g-i)_{ComCam}^2 -0.127 (g-i)_{ComCam} +0.074$ | 0.021 | $0.0 < (g-i)_{ComCam} \leq 1.8$  | [link](_static/plots/qaPlot.ComCam_to_Euclid.fit.dmag_VIS_EUCLID-r_ComCam.gi_ComCam.norder2.qa1.png) |
 | $r_{ComCam} \to VIS_{EUCLID}$ | $VIS_{EUCLID} - r_{ComCam} = -0.065 (g-i)_{ComCam}^2 -0.516 (g-i)_{ComCam} +0.852$ | 0.055 | $1.8 < (g-i)_{ComCam} \leq 4.0$  | [link](_static/plots/qaPlot.ComCam_to_Euclid.fit.dmag_VIS_EUCLID-r_ComCam.gi_ComCam.norder2.qa1.png) |
 |      &nbsp;              |                                                    |       |                               |       |
