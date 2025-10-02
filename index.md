@@ -41,6 +41,8 @@ Synthetic magnitudes were derived by integrating spectrophotometric spectra from
 
 #### 1.3.1 ComCam <--> DES
 
+#### 1.3.1.1 Original
+
 ComCam data were used to derive empirical transformations between DES and LSST ComCam filters. All $S/N >$ 5 point sources in the DES footprint were selected, including quasars and non-standard stars.
 
 :::{table} ComCam to DES Transformation Equations (Version `v_2025_08_22`).
@@ -54,6 +56,7 @@ ComCam data were used to derive empirical transformations between DES and LSST C
 | $z_{DES} = z_{ComCam} + 0.262 (i-z)_{ComCam} - 0.046 (i-z)^2_{ComCam} + 0.001$      |  0.010   | $-0.2 < (i-z)_{ComCam} < 0.8$ | [link](_static/plots/qaPlot.ComCam_to_des.fit.dmag_z.iz_ComCam.norder2.qa1.png) |
 :::
 
+#### 1.3.1.2 Updated
 
 | Conversion               | Transformation Equation                               |   RMS | Applicable Color Range           | QA Plot                                                                                               |
 |:-------------------------|:------------------------------------------------------|------:|:---------------------------------|:------------------------------------------------------------------------------------------------------|
