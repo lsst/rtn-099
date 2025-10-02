@@ -222,6 +222,8 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 
 #### 2.2.1 ComCam <--> DES DR2
 
+##### 2.2.1.1 Original
+
 :::{table} ComCam DP1 to DES DR2 (Version `v_2025_08_22`).
 :widths: auto
 
@@ -232,6 +234,27 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 | ComCam i,i-z to DES i      |  0.006   | $-0.1 < (i-z)_{DES} < 0.8$  | [link](_static/plots/qaPlot_transInterp.ComCam_to_des.i_iz_ComCam.png)     | [link](_static/data/transInterp.ComCam_to_des.i_iz_ComCam.csv) |
 | ComCam z,i-z to DES z      |  0.007   | $-0.1 < (i-z)_{DES} < 0.8$  | [link](_static/plots/qaPlot_transInterp.ComCam_to_des.z_iz_ComCam.png)     | [link](_static/data/transInterp.ComCam_to_des.z_iz_ComCam.csv) |
 :::
+
+##### 2.2.1.2 Updated
+
+| Conversion               |   RMS | Applicable Color Range    | QA Plot                                                                             | Lookup Table                                                                |
+|:-------------------------|------:|:--------------------------|:------------------------------------------------------------------------------------|:----------------------------------------------------------------------------|
+| $g_{des} \to g_{ComCam}$ | 0.01  | $0.2 < (g-i)_{des} < 3.3$ | [link](_static/plots/qaPlot_transInterp.DESDR2_to_ComCam_ECDFS.g_ComCam_gi_des.png) | [link](_static/data/transInterp.DESDR2_to_ComCam_ECDFS.g_ComCam_gi_des.csv) |
+| $r_{des} \to r_{ComCam}$ | 0.008 | $0.2 < (g-i)_{des} < 3.3$ | [link](_static/plots/qaPlot_transInterp.DESDR2_to_ComCam_ECDFS.r_ComCam_gi_des.png) | [link](_static/data/transInterp.DESDR2_to_ComCam_ECDFS.r_ComCam_gi_des.csv) |
+| $i_{des} \to i_{ComCam}$ | 0.008 | $0.2 < (g-i)_{des} < 3.3$ | [link](_static/plots/qaPlot_transInterp.DESDR2_to_ComCam_ECDFS.i_ComCam_gi_des.png) | [link](_static/data/transInterp.DESDR2_to_ComCam_ECDFS.i_ComCam_gi_des.csv) |
+| $z_{des} \to z_{ComCam}$ | 0.007 | $0.2 < (g-i)_{des} < 3.3$ | [link](_static/plots/qaPlot_transInterp.DESDR2_to_ComCam_ECDFS.z_ComCam_gi_des.png) | [link](_static/data/transInterp.DESDR2_to_ComCam_ECDFS.z_ComCam_gi_des.csv) |
+| $Y_{des} \to y_{ComCam}$ | 0.009 | $0.2 < (g-i)_{des} < 3.3$ | [link](_static/plots/qaPlot_transInterp.DESDR2_to_ComCam_ECDFS.y_ComCam_gi_des.png) | [link](_static/data/transInterp.DESDR2_to_ComCam_ECDFS.y_ComCam_gi_des.csv) |
+
+
+| Conversion               |   RMS | Applicable Color Range       | QA Plot                                                                             | Lookup Table                                                                |
+|:-------------------------|------:|:-----------------------------|:------------------------------------------------------------------------------------|:----------------------------------------------------------------------------|
+| $g_{ComCam} \to g_{des}$ | 0.01  | $0.2 < (g-i)_{ComCam} < 3.1$ | [link](_static/plots/qaPlot_transInterp.ComCam_to_DESDR2_ECDFS.g_des_gi_ComCam.png) | [link](_static/data/transInterp.ComCam_to_DESDR2_ECDFS.g_des_gi_ComCam.csv) |
+| $r_{ComCam} \to r_{des}$ | 0.009 | $0.2 < (g-i)_{ComCam} < 3.1$ | [link](_static/plots/qaPlot_transInterp.ComCam_to_DESDR2_ECDFS.r_des_gi_ComCam.png) | [link](_static/data/transInterp.ComCam_to_DESDR2_ECDFS.r_des_gi_ComCam.csv) |
+| $i_{ComCam} \to i_{des}$ | 0.008 | $0.2 < (g-i)_{ComCam} < 3.1$ | [link](_static/plots/qaPlot_transInterp.ComCam_to_DESDR2_ECDFS.i_des_gi_ComCam.png) | [link](_static/data/transInterp.ComCam_to_DESDR2_ECDFS.i_des_gi_ComCam.csv) |
+| $z_{ComCam} \to z_{des}$ | 0.007 | $0.2 < (g-i)_{ComCam} < 3.1$ | [link](_static/plots/qaPlot_transInterp.ComCam_to_DESDR2_ECDFS.z_des_gi_ComCam.png) | [link](_static/data/transInterp.ComCam_to_DESDR2_ECDFS.z_des_gi_ComCam.csv) |
+| $y_{ComCam} \to Y_{des}$ | 0.009 | $0.2 < (g-i)_{ComCam} < 3.1$ | [link](_static/plots/qaPlot_transInterp.ComCam_to_DESDR2_ECDFS.Y_des_gi_ComCam.png) | [link](_static/data/transInterp.ComCam_to_DESDR2_ECDFS.Y_des_gi_ComCam.csv) |
+
+
 
 #### 2.2.2 ComCam <--> Euclid
 
