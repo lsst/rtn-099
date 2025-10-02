@@ -62,7 +62,7 @@ ComCam data were used to derive empirical transformations between DES and LSST C
 |:-------------------------|:---------------------------------------------------|------:|:------------------------------|:---------------------------------------------------------------------------------------------------|
 | $g_{des} \to g_{ComCam}$ | $g_{ComCam} - g_{des} = -0.001 (g-i)_{des} +0.005$ | 0.008 | $-0.7 < (g-i)_{des} \leq 2.3$ | [link](_static/plots/qaPlot.DESDR2_to_ComCam_ECDFS.fit.dmag_g_ComCam-g_des.gi_des.norder1.qa1.png) |
 | $g_{des} \to g_{ComCam}$ | $g_{ComCam} - g_{des} = +0.016 (g-i)_{des} -0.026$ | 0.016 | $2.3 < (g-i)_{des} \leq 4.0$  | [link](_static/plots/qaPlot.DESDR2_to_ComCam_ECDFS.fit.dmag_g_ComCam-g_des.gi_des.norder1.qa1.png) |
-|                          |                                                    |       |                               |       |
+|      &nbsp;              |                                                    |       |                               |       |
 | $r_{des} \to r_{ComCam}$ | $r_{ComCam} - r_{des} = +0.051 (g-i)_{des} -0.003$ | 0.006 | $-0.7 < (g-i)_{des} \leq 2.0$ | [link](_static/plots/qaPlot.DESDR2_to_ComCam_ECDFS.fit.dmag_r_ComCam-r_des.gi_des.norder1.qa1.png) |
 | $r_{des} \to r_{ComCam}$ | $r_{ComCam} - r_{des} = +0.104 (g-i)_{des} -0.109$ | 0.013 | $2.0 < (g-i)_{des} \leq 4.0$  | [link](_static/plots/qaPlot.DESDR2_to_ComCam_ECDFS.fit.dmag_r_ComCam-r_des.gi_des.norder1.qa1.png) |
 | $i_{des} \to i_{ComCam}$ | $i_{ComCam} - i_{des} = +0.041 (g-i)_{des} -0.016$ | 0.006 | $-0.7 < (g-i)_{des} \leq 1.8$ | [link](_static/plots/qaPlot.DESDR2_to_ComCam_ECDFS.fit.dmag_i_ComCam-i_des.gi_des.norder1.qa1.png) |
