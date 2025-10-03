@@ -355,6 +355,16 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 | $gi_{sdss} \to gi_{ComCam}$ | 0.021 | $0.4 < (g-i)_{sdss} < 2.5$ | [link](_static/plots/qaPlot_transInterp.SDSSDR18_to_ComCam.gi_ComCam_gi_sdss.png) | [link](_static/data/transInterp.SDSSDR18_to_ComCam.gi_ComCam_gi_sdss.csv) |
 
 
+#### 2.2.5 ComCam <--> Stetson UBVRcIc
+
+| Conversion         |   RMS | Applicable Color Range   | QA Plot                                                                    | Lookup Table                                                       |
+|:-------------------|------:|:-------------------------|:---------------------------------------------------------------------------|:-------------------------------------------------------------------|
+| $V \to g_{ComCam}$ | 0.022 | $0.3 < (B-V) < 1.6$      | [link](_static/plots/qaPlot_transInterp.Stetson_to_ComCam.g_ComCam_BV.png) | [link](_static/data/transInterp.Stetson_to_ComCam.g_ComCam_BV.csv) |
+| $R \to r_{ComCam}$ | 0.019 | $0.2 < (R-I) < 1.3$      | [link](_static/plots/qaPlot_transInterp.Stetson_to_ComCam.r_ComCam_RI.png) | [link](_static/data/transInterp.Stetson_to_ComCam.r_ComCam_RI.csv) |
+| $I \to i_{ComCam}$ | 0.02  | $0.2 < (R-I) < 1.3$      | [link](_static/plots/qaPlot_transInterp.Stetson_to_ComCam.i_ComCam_RI.png) | [link](_static/data/transInterp.Stetson_to_ComCam.i_ComCam_RI.csv) |
+| $I \to z_{ComCam}$ | 0.019 | $0.2 < (R-I) < 1.3$      | [link](_static/plots/qaPlot_transInterp.Stetson_to_ComCam.z_ComCam_RI.png) | [link](_static/data/transInterp.Stetson_to_ComCam.z_ComCam_RI.csv) |
+| $I \to y_{ComCam}$ | 0.025 | $0.2 < (R-I) < 1.3$      | [link](_static/plots/qaPlot_transInterp.Stetson_to_ComCam.y_ComCam_RI.png) | [link](_static/data/transInterp.Stetson_to_ComCam.y_ComCam_RI.csv) |
+
 ## References
 
 ```{bibliography}
