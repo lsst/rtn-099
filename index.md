@@ -319,6 +319,15 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 
 #### 2.2.4 ComCam <--> PS1 DR2
 
+| Conversion               |   RMS | Applicable Color Range        | QA Plot                                                                       | Lookup Table                                                          |
+|:-------------------------|------:|:------------------------------|:------------------------------------------------------------------------------|:----------------------------------------------------------------------|
+| $g_{ComCam} \to g_{ps1}$ | 0.014 | $0.2 < (g-i)_{ComCam} < 2.8$  | [link](_static/plots/qaPlot_transInterp.ComCam_to_PS1DR2.g_ps1_gi_ComCam.png) | [link](_static/data/transInterp.ComCam_to_PS1DR2.g_ps1_gi_ComCam.csv) |
+| $r_{ComCam} \to r_{ps1}$ | 0.011 | $0.2 < (g-i)_{ComCam} < 2.8$  | [link](_static/plots/qaPlot_transInterp.ComCam_to_PS1DR2.r_ps1_gi_ComCam.png) | [link](_static/data/transInterp.ComCam_to_PS1DR2.r_ps1_gi_ComCam.csv) |
+| $i_{ComCam} \to i_{ps1}$ | 0.009 | $0.2 < (g-i)_{ComCam} < 2.8$  | [link](_static/plots/qaPlot_transInterp.ComCam_to_PS1DR2.i_ps1_gi_ComCam.png) | [link](_static/data/transInterp.ComCam_to_PS1DR2.i_ps1_gi_ComCam.csv) |
+| $z_{ComCam} \to z_{ps1}$ | 0.01  | $-0.1 < (i-z)_{ComCam} < 0.7$ | [link](_static/plots/qaPlot_transInterp.ComCam_to_PS1DR2.z_ps1_iz_ComCam.png) | [link](_static/data/transInterp.ComCam_to_PS1DR2.z_ps1_iz_ComCam.csv) |
+| $y_{ComCam} \to y_{ps1}$ | 0.012 | $-0.1 < (z-y)_{ComCam} < 0.4$ | [link](_static/plots/qaPlot_transInterp.ComCam_to_PS1DR2.y_ps1_zy_ComCam.png) | [link](_static/data/transInterp.ComCam_to_PS1DR2.y_ps1_zy_ComCam.csv) |
+
+
 | Conversion               |   RMS | Applicable Color Range     | QA Plot                                                                       | Lookup Table                                                          |
 |:-------------------------|------:|:---------------------------|:------------------------------------------------------------------------------|:----------------------------------------------------------------------|
 | $g_{ps1} \to g_{ComCam}$ | 0.014 | $0.2 < (g-i)_{ps1} < 2.7$  | [link](_static/plots/qaPlot_transInterp.PS1DR2_to_ComCam.g_ComCam_gi_ps1.png) | [link](_static/data/transInterp.PS1DR2_to_ComCam.g_ComCam_gi_ps1.csv) |
