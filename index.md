@@ -317,6 +317,16 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 | $G_{gaia} \to i_{ComCam}$ | 0.008 | $0.6 < (BP-RP)_{gaia} < 2.9$ | [link](_static/plots/qaPlot_transInterp.GaiaDR3_to_ComCam_ECDFS.i_ComCam_BP_RP_gaia.png) | [link](_static/data/transInterp.GaiaDR3_to_ComCam_ECDFS.i_ComCam_BP_RP_gaia.csv) |
 | $G_{gaia} \to y_{ComCam}$ | 0.016 | $0.6 < (BP-RP)_{gaia} < 2.9$ | [link](_static/plots/qaPlot_transInterp.GaiaDR3_to_ComCam_ECDFS.y_ComCam_BP_RP_gaia.png) | [link](_static/data/transInterp.GaiaDR3_to_ComCam_ECDFS.y_ComCam_BP_RP_gaia.csv) |
 
+#### 2.2.4 ComCam <--> PS1 DR2
+
+| Conversion               |   RMS | Applicable Color Range     | QA Plot                                                                       | Lookup Table                                                          |
+|:-------------------------|------:|:---------------------------|:------------------------------------------------------------------------------|:----------------------------------------------------------------------|
+| $g_{ps1} \to g_{ComCam}$ | 0.014 | $0.2 < (g-i)_{ps1} < 2.7$  | [link](_static/plots/qaPlot_transInterp.PS1DR2_to_ComCam.g_ComCam_gi_ps1.png) | [link](_static/data/transInterp.PS1DR2_to_ComCam.g_ComCam_gi_ps1.csv) |
+| $r_{ps1} \to r_{ComCam}$ | 0.011 | $0.2 < (g-i)_{ps1} < 2.7$  | [link](_static/plots/qaPlot_transInterp.PS1DR2_to_ComCam.r_ComCam_gi_ps1.png) | [link](_static/data/transInterp.PS1DR2_to_ComCam.r_ComCam_gi_ps1.csv) |
+| $i_{ps1} \to i_{ComCam}$ | 0.009 | $0.2 < (g-i)_{ps1} < 2.7$  | [link](_static/plots/qaPlot_transInterp.PS1DR2_to_ComCam.i_ComCam_gi_ps1.png) | [link](_static/data/transInterp.PS1DR2_to_ComCam.i_ComCam_gi_ps1.csv) |
+| $z_{ps1} \to z_{ComCam}$ | 0.01  | $-0.1 < (i-z)_{ps1} < 0.7$ | [link](_static/plots/qaPlot_transInterp.PS1DR2_to_ComCam.z_ComCam_iz_ps1.png) | [link](_static/data/transInterp.PS1DR2_to_ComCam.z_ComCam_iz_ps1.csv) |
+| $y_{ps1} \to y_{ComCam}$ | 0.013 | $-0.1 < (z-y)_{ps1} < 0.4$ | [link](_static/plots/qaPlot_transInterp.PS1DR2_to_ComCam.y_ComCam_zy_ps1.png) | [link](_static/data/transInterp.PS1DR2_to_ComCam.y_ComCam_zy_ps1.csv) |
+
 
 ## References
 
