@@ -346,6 +346,14 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 | $z_{ComCam} \to z_{sdss}$   | 0.017 | $0.4 < (g-i)_{ComCam} < 2.3$ | [link](_static/plots/qaPlot_transInterp.ComCam_to_SDSSDR18.z_sdss_gi_ComCam.png)  | [link](_static/data/transInterp.ComCam_to_SDSSDR18.z_sdss_gi_ComCam.csv)  |
 | $gi_{ComCam} \to gi_{sdss}$ | 0.022 | $0.4 < (g-i)_{ComCam} < 2.3$ | [link](_static/plots/qaPlot_transInterp.ComCam_to_SDSSDR18.gi_sdss_gi_ComCam.png) | [link](_static/data/transInterp.ComCam_to_SDSSDR18.gi_sdss_gi_ComCam.csv) |
 
+| Conversion                  |   RMS | Applicable Color Range     | QA Plot                                                                           | Lookup Table                                                              |
+|:----------------------------|------:|:---------------------------|:----------------------------------------------------------------------------------|:--------------------------------------------------------------------------|
+| $g_{sdss} \to g_{ComCam}$   | 0.015 | $0.4 < (g-i)_{sdss} < 2.5$ | [link](_static/plots/qaPlot_transInterp.SDSSDR18_to_ComCam.g_ComCam_gi_sdss.png)  | [link](_static/data/transInterp.SDSSDR18_to_ComCam.g_ComCam_gi_sdss.csv)  |
+| $r_{sdss} \to r_{ComCam}$   | 0.012 | $0.4 < (g-i)_{sdss} < 2.5$ | [link](_static/plots/qaPlot_transInterp.SDSSDR18_to_ComCam.r_ComCam_gi_sdss.png)  | [link](_static/data/transInterp.SDSSDR18_to_ComCam.r_ComCam_gi_sdss.csv)  |
+| $i_{sdss} \to i_{ComCam}$   | 0.013 | $0.4 < (g-i)_{sdss} < 2.5$ | [link](_static/plots/qaPlot_transInterp.SDSSDR18_to_ComCam.i_ComCam_gi_sdss.png)  | [link](_static/data/transInterp.SDSSDR18_to_ComCam.i_ComCam_gi_sdss.csv)  |
+| $z_{sdss} \to z_{ComCam}$   | 0.015 | $0.4 < (g-i)_{sdss} < 2.5$ | [link](_static/plots/qaPlot_transInterp.SDSSDR18_to_ComCam.z_ComCam_gi_sdss.png)  | [link](_static/data/transInterp.SDSSDR18_to_ComCam.z_ComCam_gi_sdss.csv)  |
+| $gi_{sdss} \to gi_{ComCam}$ | 0.021 | $0.4 < (g-i)_{sdss} < 2.5$ | [link](_static/plots/qaPlot_transInterp.SDSSDR18_to_ComCam.gi_ComCam_gi_sdss.png) | [link](_static/data/transInterp.SDSSDR18_to_ComCam.gi_ComCam_gi_sdss.csv) |
+
 
 ## References
 
