@@ -357,6 +357,15 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 
 #### 2.2.5 ComCam <--> Stetson UBVRcIc
 
+| Conversion         |   RMS | Applicable Color Range       | QA Plot                                                                    | Lookup Table                                                       |
+|:-------------------|------:|:-----------------------------|:---------------------------------------------------------------------------|:-------------------------------------------------------------------|
+| $u_{ComCam} \to U$ | 0.492 | $0.3 < (g-i)_{ComCam} < 2.4$ | [link](_static/plots/qaPlot_transInterp.ComCam_to_Stetson.U_gi_ComCam.png) | [link](_static/data/transInterp.ComCam_to_Stetson.U_gi_ComCam.csv) |
+| $g_{ComCam} \to B$ | 0.042 | $0.3 < (g-i)_{ComCam} < 2.4$ | [link](_static/plots/qaPlot_transInterp.ComCam_to_Stetson.B_gi_ComCam.png) | [link](_static/data/transInterp.ComCam_to_Stetson.B_gi_ComCam.csv) |
+| $g_{ComCam} \to V$ | 0.043 | $0.3 < (g-i)_{ComCam} < 2.4$ | [link](_static/plots/qaPlot_transInterp.ComCam_to_Stetson.V_gi_ComCam.png) | [link](_static/data/transInterp.ComCam_to_Stetson.V_gi_ComCam.csv) |
+| $r_{ComCam} \to R$ | 0.03  | $0.3 < (g-i)_{ComCam} < 2.4$ | [link](_static/plots/qaPlot_transInterp.ComCam_to_Stetson.R_gi_ComCam.png) | [link](_static/data/transInterp.ComCam_to_Stetson.R_gi_ComCam.csv) |
+| $i_{ComCam} \to I$ | 0.023 | $0.3 < (g-i)_{ComCam} < 2.4$ | [link](_static/plots/qaPlot_transInterp.ComCam_to_Stetson.I_gi_ComCam.png) | [link](_static/data/transInterp.ComCam_to_Stetson.I_gi_ComCam.csv) |
+
+
 | Conversion         |   RMS | Applicable Color Range   | QA Plot                                                                    | Lookup Table                                                       |
 |:-------------------|------:|:-------------------------|:---------------------------------------------------------------------------|:-------------------------------------------------------------------|
 | $V \to g_{ComCam}$ | 0.022 | $0.3 < (B-V) < 1.6$      | [link](_static/plots/qaPlot_transInterp.Stetson_to_ComCam.g_ComCam_BV.png) | [link](_static/data/transInterp.Stetson_to_ComCam.g_ComCam_BV.csv) |
@@ -364,6 +373,7 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 | $I \to i_{ComCam}$ | 0.02  | $0.2 < (R-I) < 1.3$      | [link](_static/plots/qaPlot_transInterp.Stetson_to_ComCam.i_ComCam_RI.png) | [link](_static/data/transInterp.Stetson_to_ComCam.i_ComCam_RI.csv) |
 | $I \to z_{ComCam}$ | 0.019 | $0.2 < (R-I) < 1.3$      | [link](_static/plots/qaPlot_transInterp.Stetson_to_ComCam.z_ComCam_RI.png) | [link](_static/data/transInterp.Stetson_to_ComCam.z_ComCam_RI.csv) |
 | $I \to y_{ComCam}$ | 0.025 | $0.2 < (R-I) < 1.3$      | [link](_static/plots/qaPlot_transInterp.Stetson_to_ComCam.y_ComCam_RI.png) | [link](_static/data/transInterp.Stetson_to_ComCam.y_ComCam_RI.csv) |
+
 
 ## References
 
