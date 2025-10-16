@@ -39,9 +39,22 @@ Synthetic magnitudes were derived by integrating spectrophotometric spectra from
 
 | Conversion                 | Transformation Equation                                                     |   RMS | Applicable Color Range         | QA Plot                                                                                     |
 |:---------------------------|:----------------------------------------------------------------------------|------:|:-------------------------------|:--------------------------------------------------------------------------------------------|
+| $g_{LSST} \to TESS_{vega}$ | $TESS_{vega} - g_{LSST} = -0.007 (g-i)_{LSST}^2 -0.996 (g-i)_{LSST} -0.440$ | 0.009 | $-1.1 < (g-i)_{LSST} \leq -0.1$ | [link](_static/plots/qaPlot.LSST_to_TESS.fit.dmag_TESS_vega-g_LSST.gi_LSST.norder2.qa1.png) |
+| $g_{LSST} \to TESS_{vega}$ | $TESS_{vega} - g_{LSST} = -0.049 (g-i)_{LSST}^2 -0.927 (g-i)_{LSST} -0.443$ | 0.011 | $-0.1 < (g-i)_{LSST} \leq 3.9$  | [link](_static/plots/qaPlot.LSST_to_TESS.fit.dmag_TESS_vega-g_LSST.gi_LSST.norder2.qa1.png) |
+| $r_{LSST} \to TESS_{vega}$ | $TESS_{vega} - r_{LSST} = +0.008 (g-i)_{LSST}^2 -0.322 (g-i)_{LSST} -0.382$ | 0.013 | $-1.1 < (g-i)_{LSST} \leq 1.5$ | [link](_static/plots/qaPlot.LSST_to_TESS.fit.dmag_TESS_vega-r_LSST.gi_LSST.norder2.qa1.png) |
+| $r_{LSST} \to TESS_{vega}$ | $TESS_{vega} - r_{LSST} = -0.401 (g-i)_{LSST}^2 +0.683 (g-i)_{LSST} -0.980$ | 0.165 | $1.5 < (g-i)_{LSST} \leq 3.9$  | [link](_static/plots/qaPlot.LSST_to_TESS.fit.dmag_TESS_vega-r_LSST.gi_LSST.norder2.qa1.png) |
+| $i_{LSST} \to TESS_{vega}$ | $TESS_{vega} - i_{LSST} = -0.018 (g-i)_{LSST}^2 -0.009 (g-i)_{LSST} -0.444$ | 0.009 | $-1.1 < (g-i)_{LSST} \leq 0.0$ | [link](_static/plots/qaPlot.LSST_to_TESS.fit.dmag_TESS_vega-i_LSST.gi_LSST.norder2.qa1.png) |
+| $i_{LSST} \to TESS_{vega}$ | $TESS_{vega} - i_{LSST} = -0.033 (g-i)_{LSST}^2 +0.039 (g-i)_{LSST} -0.431$ | 0.008 | $0.0 < (g-i)_{LSST} \leq 1.2$  | [link](_static/plots/qaPlot.LSST_to_TESS.fit.dmag_TESS_vega-i_LSST.gi_LSST.norder2.qa1.png) |
+| $i_{LSST} \to TESS_{vega}$ | $TESS_{vega} - i_{LSST} = -0.025 (g-i)_{LSST}^2 +0.023 (g-i)_{LSST} -0.420$ | 0.01  | $1.2 < (g-i)_{LSST} \leq 2.0$  | [link](_static/plots/qaPlot.LSST_to_TESS.fit.dmag_TESS_vega-i_LSST.gi_LSST.norder2.qa1.png) |
+| $i_{LSST} \to TESS_{vega}$ | $TESS_{vega} - i_{LSST} = -0.269 (g-i)_{LSST}^2 +0.967 (g-i)_{LSST} -1.300$ | 0.242 | $2.0 < (g-i)_{LSST} \leq 3.9$  | [link](_static/plots/qaPlot.LSST_to_TESS.fit.dmag_TESS_vega-i_LSST.gi_LSST.norder2.qa1.png) |
+| $z_{LSST} \to TESS_{vega}$ | $TESS_{vega} - z_{LSST} = -0.173 (g-i)_{LSST}^2 +0.083 (g-i)_{LSST} -0.504$ | 0.016 | $-1.1 < (g-i)_{LSST} \leq -0.1$ | [link](_static/plots/qaPlot.LSST_to_TESS.fit.dmag_TESS_vega-z_LSST.gi_LSST.norder2.qa1.png) |
+| $z_{LSST} \to TESS_{vega}$ | $TESS_{vega} - z_{LSST} = -0.005 (g-i)_{LSST}^2 +0.166 (g-i)_{LSST} -0.480$ | 0.012 | $-0.1 < (g-i)_{LSST} \leq 1.5$  | [link](_static/plots/qaPlot.LSST_to_TESS.fit.dmag_TESS_vega-z_LSST.gi_LSST.norder2.qa1.png) |
+| $z_{LSST} \to TESS_{vega}$ | $TESS_{vega} - z_{LSST} = -0.088 (g-i)_{LSST}^2 +0.622 (g-i)_{LSST} -0.995$ | 0.023 | $1.5 < (g-i)_{LSST} \leq 2.5$   | [link](_static/plots/qaPlot.LSST_to_TESS.fit.dmag_TESS_vega-z_LSST.gi_LSST.norder2.qa1.png) |
+| $z_{LSST} \to TESS_{vega}$ | $TESS_{vega} - z_{LSST} = -0.044 (g-i)_{LSST}^2 +0.286 (g-i)_{LSST} -0.407$ | 0.058 | $2.5 < (g-i)_{LSST} \leq 3.9$   | [link](_static/plots/qaPlot.LSST_to_TESS.fit.dmag_TESS_vega-z_LSST.gi_LSST.norder2.qa1.png) |
 | $y_{LSST} \to TESS_{vega}$ | $TESS_{vega} - y_{LSST} = -0.087 (g-i)_{LSST}^2 +0.407 (g-i)_{LSST} -0.479$ | 0.03  | $-1.1 < (g-i)_{LSST} \leq 0.0$ | [link](_static/plots/qaPlot.LSST_to_TESS.fit.dmag_TESS_vega-y_LSST.gi_LSST.norder2.qa1.png) |
 | $y_{LSST} \to TESS_{vega}$ | $TESS_{vega} - y_{LSST} = +0.019 (g-i)_{LSST}^2 +0.225 (g-i)_{LSST} -0.513$ | 0.025 | $0.0 < (g-i)_{LSST} \leq 1.5$  | [link](_static/plots/qaPlot.LSST_to_TESS.fit.dmag_TESS_vega-y_LSST.gi_LSST.norder2.qa1.png) |
 | $y_{LSST} \to TESS_{vega}$ | $TESS_{vega} - y_{LSST} = +0.115 (g-i)_{LSST}^2 -0.049 (g-i)_{LSST} -0.291$ | 0.085 | $1.5 < (g-i)_{LSST} \leq 3.9$  | [link](_static/plots/qaPlot.LSST_to_TESS.fit.dmag_TESS_vega-y_LSST.gi_LSST.norder2.qa1.png) |
+
 
 
 | Conversion                 | Transformation Equation                                                         |   RMS | Applicable Color Range            | QA Plot                                                                                        |
