@@ -22,6 +22,7 @@ _Under Construction_
 
 Synthetic magnitudes were derived by integrating spectrophotometric spectra from the Pickles Stellar Spectra Library {cite}`1998PASP..110..863P` with filter passband transmission curves for DES and LSST. These magnitudes were calculated using broad-band absolute magnitude definitions and processed using a Python-based fitting code to generate transformation equations. Due to the limited number of stars in the Pickles library (~100), the resulting plots are sparse but provide a consistent reference.
 
+#### 1.2.1 LSST <--> DES
 
 :::{table} DES to LSST Transformation Equations (Version `v_2025_08_22`).
 :widths: auto
@@ -34,8 +35,15 @@ Synthetic magnitudes were derived by integrating spectrophotometric spectra from
 | $z_{LSST} = z_{DES} + 0.270 (i-z)_{DES} + 0.036 (i-z)^2_{DES} - 0.003$      |  0.010   | $-0.3 < (i-z)_{DES} < 1.84   | [link](_static/plots/qaPlot.des_to_lsst.fit.dmag_z.iz_des.norder2.qa1.png) |
 :::
 
+#### 1.2.2 LSST <--> TESS
 
-   
+| Conversion                 | Transformation Equation                                                     |   RMS | Applicable Color Range         | QA Plot                                                                                     |
+|:---------------------------|:----------------------------------------------------------------------------|------:|:-------------------------------|:--------------------------------------------------------------------------------------------|
+| $y_{LSST} \to TESS_{vega}$ | $TESS_{vega} - y_{LSST} = -0.087 (g-i)_{LSST}^2 +0.407 (g-i)_{LSST} -0.479$ | 0.03  | $-1.1 < (g-i)_{LSST} \leq 0.0$ | [link](_static/plots/qaPlot.LSST_to_TESS.fit.dmag_TESS_vega-y_LSST.gi_LSST.norder2.qa1.png) |
+| $y_{LSST} \to TESS_{vega}$ | $TESS_{vega} - y_{LSST} = +0.019 (g-i)_{LSST}^2 +0.225 (g-i)_{LSST} -0.513$ | 0.025 | $0.0 < (g-i)_{LSST} \leq 1.5$  | [link](_static/plots/qaPlot.LSST_to_TESS.fit.dmag_TESS_vega-y_LSST.gi_LSST.norder2.qa1.png) |
+| $y_{LSST} \to TESS_{vega}$ | $TESS_{vega} - y_{LSST} = +0.115 (g-i)_{LSST}^2 -0.049 (g-i)_{LSST} -0.291$ | 0.085 | $1.5 < (g-i)_{LSST} \leq 3.9$  | [link](_static/plots/qaPlot.LSST_to_TESS.fit.dmag_TESS_vega-y_LSST.gi_LSST.norder2.qa1.png) |
+
+
 
 ### 1.3. ComCam Transformations
 
