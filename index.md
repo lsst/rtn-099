@@ -44,6 +44,25 @@ Synthetic magnitudes were derived by integrating spectrophotometric spectra from
 | $y_{LSST} \to TESS_{vega}$ | $TESS_{vega} - y_{LSST} = +0.115 (g-i)_{LSST}^2 -0.049 (g-i)_{LSST} -0.291$ | 0.085 | $1.5 < (g-i)_{LSST} \leq 3.9$  | [link](_static/plots/qaPlot.LSST_to_TESS.fit.dmag_TESS_vega-y_LSST.gi_LSST.norder2.qa1.png) |
 
 
+| Conversion                 | Transformation Equation                                                         |   RMS | Applicable Color Range            | QA Plot                                                                                        |
+|:---------------------------|:--------------------------------------------------------------------------------|------:|:----------------------------------|:-----------------------------------------------------------------------------------------------|
+| $TESS_{vega} \to u_{LSST}$ | $u_{LSST} - TESS_{vega} = +2.530 (BP-RP)_{gaia}^2 +5.920 (BP-RP)_{gaia} +2.364$ | 0.062 | $-1.0 < (BP-RP)_{gaia} \leq -0.3$ | [link](_static/plots/qaPlot.TESS_to_LSST.fit.dmag_u_LSST-TESS_vega.BP_RP_gaia.norder2.qa1.png) |
+| $TESS_{vega} \to u_{LSST}$ | $u_{LSST} - TESS_{vega} = -1.922 (BP-RP)_{gaia}^2 +1.664 (BP-RP)_{gaia} +1.264$ | 0.089 | $-0.3 < (BP-RP)_{gaia} \leq 0.3$  | [link](_static/plots/qaPlot.TESS_to_LSST.fit.dmag_u_LSST-TESS_vega.BP_RP_gaia.norder2.qa1.png) |
+| $TESS_{vega} \to u_{LSST}$ | $u_{LSST} - TESS_{vega} = +0.631 (BP-RP)_{gaia}^2 +2.592 (BP-RP)_{gaia} +0.825$ | 0.149 | $0.3 < (BP-RP)_{gaia} \leq 1.2$   | [link](_static/plots/qaPlot.TESS_to_LSST.fit.dmag_u_LSST-TESS_vega.BP_RP_gaia.norder2.qa1.png) |
+| $TESS_{vega} \to u_{LSST}$ | $u_{LSST} - TESS_{vega} = -0.245 (BP-RP)_{gaia}^2 +1.731 (BP-RP)_{gaia} +3.039$ | 0.272 | $1.2 < (BP-RP)_{gaia} \leq 4.4$   | [link](_static/plots/qaPlot.TESS_to_LSST.fit.dmag_u_LSST-TESS_vega.BP_RP_gaia.norder2.qa1.png) |
+| $TESS_{vega} \to g_{LSST}$ | $g_{LSST} - TESS_{vega} = +0.173 (BP-RP)_{gaia}^2 +1.136 (BP-RP)_{gaia} +0.381$ | 0.015 | $-1.0 < (BP-RP)_{gaia} \leq 1.3$  | [link](_static/plots/qaPlot.TESS_to_LSST.fit.dmag_g_LSST-TESS_vega.BP_RP_gaia.norder2.qa1.png) |
+| $TESS_{vega} \to g_{LSST}$ | $g_{LSST} - TESS_{vega} = +0.015 (BP-RP)_{gaia}^2 +0.979 (BP-RP)_{gaia} +0.839$ | 0.064 | $1.3 < (BP-RP)_{gaia} \leq 4.4$   | [link](_static/plots/qaPlot.TESS_to_LSST.fit.dmag_g_LSST-TESS_vega.BP_RP_gaia.norder2.qa1.png) |
+| $TESS_{vega} \to r_{LSST}$ | $r_{LSST} - TESS_{vega} = +0.035 (BP-RP)_{gaia}^2 +0.370 (BP-RP)_{gaia} +0.366$ | 0.011 | $-1.0 < (BP-RP)_{gaia} \leq 1.2$  | [link](_static/plots/qaPlot.TESS_to_LSST.fit.dmag_r_LSST-TESS_vega.BP_RP_gaia.norder2.qa1.png) |
+| $TESS_{vega} \to r_{LSST}$ | $r_{LSST} - TESS_{vega} = +0.071 (BP-RP)_{gaia}^2 +0.682 (BP-RP)_{gaia} -0.057$ | 0.064 | $1.2 < (BP-RP)_{gaia} \leq 4.4$   | [link](_static/plots/qaPlot.TESS_to_LSST.fit.dmag_r_LSST-TESS_vega.BP_RP_gaia.norder2.qa1.png) |
+| $TESS_{vega} \to i_{LSST}$ | $i_{LSST} - TESS_{vega} = +0.016 (BP-RP)_{gaia}^2 -0.019 (BP-RP)_{gaia} +0.430$ | 0.01  | $-1.0 < (BP-RP)_{gaia} \leq 1.2$  | [link](_static/plots/qaPlot.TESS_to_LSST.fit.dmag_i_LSST-TESS_vega.BP_RP_gaia.norder2.qa1.png) |
+| $TESS_{vega} \to i_{LSST}$ | $i_{LSST} - TESS_{vega} = +0.167 (BP-RP)_{gaia}^2 -0.518 (BP-RP)_{gaia} +0.860$ | 0.047 | $1.2 < (BP-RP)_{gaia} \leq 4.4$   | [link](_static/plots/qaPlot.TESS_to_LSST.fit.dmag_i_LSST-TESS_vega.BP_RP_gaia.norder2.qa1.png) |
+| $TESS_{vega} \to z_{LSST}$ | $z_{LSST} - TESS_{vega} = -0.004 (BP-RP)_{gaia}^2 -0.230 (BP-RP)_{gaia} +0.503$ | 0.014 | $-1.0 < (BP-RP)_{gaia} \leq 2.5$  | [link](_static/plots/qaPlot.TESS_to_LSST.fit.dmag_z_LSST-TESS_vega.BP_RP_gaia.norder2.qa1.png) |
+| $TESS_{vega} \to z_{LSST}$ | $z_{LSST} - TESS_{vega} = +0.159 (BP-RP)_{gaia}^2 -1.039 (BP-RP)_{gaia} +1.570$ | 0.026 | $2.5 < (BP-RP)_{gaia} \leq 4.4$   | [link](_static/plots/qaPlot.TESS_to_LSST.fit.dmag_z_LSST-TESS_vega.BP_RP_gaia.norder2.qa1.png) |
+| $TESS_{vega} \to y_{LSST}$ | $y_{LSST} - TESS_{vega} = +0.044 (BP-RP)_{gaia}^2 -0.440 (BP-RP)_{gaia} +0.518$ | 0.026 | $-1.0 < (BP-RP)_{gaia} \leq 0.1$  | [link](_static/plots/qaPlot.TESS_to_LSST.fit.dmag_y_LSST-TESS_vega.BP_RP_gaia.norder2.qa1.png) |
+| $TESS_{vega} \to y_{LSST}$ | $y_{LSST} - TESS_{vega} = -0.094 (BP-RP)_{gaia}^2 -0.217 (BP-RP)_{gaia} +0.511$ | 0.023 | $0.1 < (BP-RP)_{gaia} \leq 1.2$   | [link](_static/plots/qaPlot.TESS_to_LSST.fit.dmag_y_LSST-TESS_vega.BP_RP_gaia.norder2.qa1.png) |
+| $TESS_{vega} \to y_{LSST}$ | $y_{LSST} - TESS_{vega} = +0.157 (BP-RP)_{gaia}^2 -0.972 (BP-RP)_{gaia} +1.063$ | 0.023 | $1.2 < (BP-RP)_{gaia} \leq 2.0$   | [link](_static/plots/qaPlot.TESS_to_LSST.fit.dmag_y_LSST-TESS_vega.BP_RP_gaia.norder2.qa1.png) |
+| $TESS_{vega} \to y_{LSST}$ | $y_{LSST} - TESS_{vega} = -0.060 (BP-RP)_{gaia}^2 -0.049 (BP-RP)_{gaia} +0.101$ | 0.063 | $2.0 < (BP-RP)_{gaia} \leq 4.4$   | [link](_static/plots/qaPlot.TESS_to_LSST.fit.dmag_y_LSST-TESS_vega.BP_RP_gaia.norder2.qa1.png) |
+
 
 ### 1.3. ComCam Transformations
 
