@@ -87,7 +87,7 @@ Synthetic magnitudes were derived by integrating spectrophotometric spectra from
 
 #### 1.2.3 ComCam <--> SDSS (u-band)
 
-Unfortunately, none of the ComCam DP1 u-band science exposures overlap SDSS.  Therefore, for transformations between ComCam u-band and SDSS u-band, for the time being we make use of synthetic photometry for stellar spectral energy distributions in the Pickles Stellar Spectra Library {cite}`1998PASP..110..863P`.  For other filters, we recommend the observed relations listed in Section 1.3.5 below.
+Unfortunately, none of the ComCam DP1 u-band science exposures overlap SDSS.  Therefore, for transformations between ComCam u-band and SDSS u-band, we make use of synthetic photometry for stellar spectral energy distributions in the Pickles Stellar Spectra Library {cite}`1998PASP..110..863P` for the time being.  For other filters, we recommend the observed relations listed in Section 1.3.5 below.  (***Note:  the Pickles atlas does not include white dwarfs; it is not recommended to use these Pickles-based transformations for white dwarfs, especially in u-band, where white dwarfs differ significantly from other stellar types.)
 
 | Conversion                | Transformation Equation                                                        |   RMS | Applicable Color Range            | QA Plot                                                                                                  |
 |:--------------------------|:-------------------------------------------------------------------------------|------:|:----------------------------------|:---------------------------------------------------------------------------------------------------------|
