@@ -18,9 +18,9 @@ _Under Construction_
 
 
 
-### 1.2. Synthetic LSSTCam Transformations
+### 1.2. Synthetic LSSTCam and ComCam Transformations
 
-Synthetic magnitudes were derived by integrating spectrophotometric spectra from the Pickles Stellar Spectra Library {cite}`1998PASP..110..863P` with filter passband transmission curves for DES and LSST. These magnitudes were calculated using broad-band absolute magnitude definitions and processed using a Python-based fitting code to generate transformation equations. Due to the limited number of stars in the Pickles library (~100), the resulting plots are sparse but provide a consistent reference.
+Synthetic magnitudes were derived by integrating spectrophotometric spectra from the Pickles Stellar Spectra Library {cite}`1998PASP..110..863P` with filter passband transmission curves for LSSTCam, ComCam, and other photometric systems. These magnitudes were calculated using broad-band absolute magnitude definitions and processed using a Python-based fitting code to generate transformation equations. Due to the limited number of stars in the Pickles library (~100), the resulting plots are sparse but provide a consistent reference.
 
 #### 1.2.1 LSST <--> DES
 
@@ -84,6 +84,23 @@ Synthetic magnitudes were derived by integrating spectrophotometric spectra from
 | $TESS_{vega} \to y_{LSST}$ | $y_{LSST} - TESS_{vega} = -0.094 (BP-RP)_{gaia}^2 -0.217 (BP-RP)_{gaia} +0.511$ | 0.023 | $0.1 < (BP-RP)_{gaia} \leq 1.2$   | [link](_static/plots/qaPlot.TESS_to_LSST.fit.dmag_y_LSST-TESS_vega.BP_RP_gaia.norder2.qa1.png) |
 | $TESS_{vega} \to y_{LSST}$ | $y_{LSST} - TESS_{vega} = +0.157 (BP-RP)_{gaia}^2 -0.972 (BP-RP)_{gaia} +1.063$ | 0.023 | $1.2 < (BP-RP)_{gaia} \leq 2.0$   | [link](_static/plots/qaPlot.TESS_to_LSST.fit.dmag_y_LSST-TESS_vega.BP_RP_gaia.norder2.qa1.png) |
 | $TESS_{vega} \to y_{LSST}$ | $y_{LSST} - TESS_{vega} = -0.060 (BP-RP)_{gaia}^2 -0.049 (BP-RP)_{gaia} +0.101$ | 0.063 | $2.0 < (BP-RP)_{gaia} \leq 4.4$   | [link](_static/plots/qaPlot.TESS_to_LSST.fit.dmag_y_LSST-TESS_vega.BP_RP_gaia.norder2.qa1.png) |
+
+#### 1.2.3 ComCam <--> SDSS (u-band)
+
+Unfortunately, none of the ComCam DP1 u-band science exposures overlap SDSS.  Therefore, for transformations between ComCam u-band and SDSS u-band, for the time being we make use of synthetic photometry for stellar spectral energy distributions in the Pickles Stellar Spectra Library {cite}`1998PASP..110..863P`.  For other filters, we recommend the observed relations listed in Section 1.3.5 below.
+
+| Conversion                | Transformation Equation                                                        |   RMS | Applicable Color Range            | QA Plot                                                                                                  |
+|:--------------------------|:-------------------------------------------------------------------------------|------:|:----------------------------------|:---------------------------------------------------------------------------------------------------------|
+| $u_{ComCam} \to u_{sdss}$ | $u_{sdss} - u_{ComCam} = +0.587 (g-i)_{ComCam}^2 +1.424 (g-i)_{ComCam} +0.758$ | 0.063 | $-1.1 < (g-i)_{ComCam} \leq -0.4$ | [link](_static/plots/qaPlot.synthComCam_to_synthSDSS.fit.dmag_u_sdss-u_ComCam.gi_ComCam.norder2.qa1.png) |
+| $u_{ComCam} \to u_{sdss}$ | $u_{sdss} - u_{ComCam} = +0.063 (g-i)_{ComCam}^2 -0.192 (g-i)_{ComCam} +0.263$ | 0.021 | $-0.4 < (g-i)_{ComCam} \leq 0.8$  | [link](_static/plots/qaPlot.synthComCam_to_synthSDSS.fit.dmag_u_sdss-u_ComCam.gi_ComCam.norder2.qa1.png) |
+| $u_{ComCam} \to u_{sdss}$ | $u_{sdss} - u_{ComCam} = -0.003 (g-i)_{ComCam}^2 +0.174 (g-i)_{ComCam} +0.059$ | 0.054 | $0.8 < (g-i)_{ComCam} \leq 3.9$   | [link](_static/plots/qaPlot.synthComCam_to_synthSDSS.fit.dmag_u_sdss-u_ComCam.gi_ComCam.norder2.qa1.png) |
+
+| Conversion                | Transformation Equation                                                    |   RMS | Applicable Color Range          | QA Plot                                                                                                |
+|:--------------------------|:---------------------------------------------------------------------------|------:|:--------------------------------|:-------------------------------------------------------------------------------------------------------|
+| $u_{sdss} \to u_{ComCam}$ | $u_{ComCam} - u_{sdss} = -0.534 (g-i)_{sdss}^2 -1.338 (g-i)_{sdss} -0.733$ | 0.063 | $-1.1 < (g-i)_{sdss} \leq -0.4$ | [link](_static/plots/qaPlot.synthSDSS_to_synthComCam.fit.dmag_u_ComCam-u_sdss.gi_sdss.norder2.qa1.png) |
+| $u_{sdss} \to u_{ComCam}$ | $u_{ComCam} - u_{sdss} = -0.015 (g-i)_{sdss}^2 +0.176 (g-i)_{sdss} -0.272$ | 0.02  | $-0.4 < (g-i)_{sdss} \leq 0.8$  | [link](_static/plots/qaPlot.synthSDSS_to_synthComCam.fit.dmag_u_ComCam-u_sdss.gi_sdss.norder2.qa1.png) |
+| $u_{sdss} \to u_{ComCam}$ | $u_{ComCam} - u_{sdss} = -0.006 (g-i)_{sdss}^2 -0.133 (g-i)_{sdss} -0.079$ | 0.052 | $0.8 < (g-i)_{sdss} \leq 4.0$   | [link](_static/plots/qaPlot.synthSDSS_to_synthComCam.fit.dmag_u_ComCam-u_sdss.gi_sdss.norder2.qa1.png) |
+
 
 
 ### 1.3. ComCam Transformations
