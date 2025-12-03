@@ -1,12 +1,12 @@
 # Photometric Transformation Relations for the LSST Data Preview 1
 
 ```{abstract}
-This technical note provides photometric transformation relations between the Vera C. Rubin Observatory's LSSTCam and LSSTComCam systems and other photometric systems. These transformations are derived using both synthetic and empirical data and are intended to support calibration and comparison across survey systems. We present both polynomial equations and lookup-table-based methods, depending on the available data and desired accuracy. The transformations are generally valid for stars with typical spectral energy distributions (SEDs), and caution should be used when applying them to objects with strong emission lines or atypical colors.
+This technical note provides photometric transformation relations between the Vera C. Rubin Observatory's LSSTCam {cite:p}`10.71929/rubin/2571927` and LSSTComCam {cite:p}`10.71929/rubin/2561361` systems and other photometric systems. These transformations are derived using both synthetic and empirical data and are intended to support calibration and comparison across survey systems. We present both polynomial equations and lookup-table-based methods, depending on the available data and desired accuracy. The transformations are generally valid for stars with typical spectral energy distributions (SEDs), and caution should be used when applying them to objects with strong emission lines or atypical colors.
 ```
 
 ## 0. General Overview
 
-These transformations were derived by matching data from other surveys with the Rubin LSST DP1 {cite}`RTN-095`.  This technical note provides a general overview of the results from the calculation of transformations to and from the Rubin LSST DP1 photometric system.  Details of the process will be presented in on or more future journal articles (Porter et al., _in preparation_, etc.).  
+These transformations were derived by matching data from other surveys with the Rubin LSST DP1 {cite}`RTN-095`.  This technical note provides a general overview of the results from the calculation of transformations to and from the Rubin LSST DP1 photometric system.  Details of the process will be presented in one or more future journal articles (Porter et al., _in preparation_, etc.).
 
 This technical note should be considered a living document:  as additional photometric systems are analyzed and/or current transformations are updated, this document will be updated to include the new material.
 
@@ -18,9 +18,9 @@ _Under Construction_
 
 
 
-### 1.2. Synthetic LSSTCam and ComCam Transformations
+### 1.2. Synthetic LSSTCam and LSSTComCam Transformations
 
-Synthetic magnitudes were derived by integrating spectrophotometric spectra from the Pickles Stellar Spectra Library {cite}`1998PASP..110..863P` with filter passband transmission curves for LSSTCam, ComCam, and other photometric systems. These magnitudes were calculated using broad-band absolute magnitude definitions and processed using a Python-based fitting code to generate transformation equations. Due to the limited number of stars in the Pickles library (~100), the resulting plots are sparse but provide a consistent reference.
+Synthetic magnitudes were derived by integrating spectrophotometric spectra from the Pickles Stellar Spectra Library {cite}`1998PASP..110..863P` with filter passband transmission curves for LSSTCam, LSSTComCam, and other photometric systems. These magnitudes were calculated using broad-band absolute magnitude definitions and processed using a Python-based fitting code to generate transformation equations. Due to the limited number of stars in the Pickles library (~100), the resulting plots are sparse but provide a consistent reference.
 
 #### 1.2.1 LSST <--> DES
 
@@ -85,9 +85,13 @@ Synthetic magnitudes were derived by integrating spectrophotometric spectra from
 | $TESS_{vega} \to y_{LSST}$ | $y_{LSST} - TESS_{vega} = +0.157 (BP-RP)_{gaia}^2 -0.972 (BP-RP)_{gaia} +1.063$ | 0.023 | $1.2 < (BP-RP)_{gaia} \leq 2.0$   | [link](_static/plots/qaPlot.TESS_to_LSST.fit.dmag_y_LSST-TESS_vega.BP_RP_gaia.norder2.qa1.png) |
 | $TESS_{vega} \to y_{LSST}$ | $y_{LSST} - TESS_{vega} = -0.060 (BP-RP)_{gaia}^2 -0.049 (BP-RP)_{gaia} +0.101$ | 0.063 | $2.0 < (BP-RP)_{gaia} \leq 4.4$   | [link](_static/plots/qaPlot.TESS_to_LSST.fit.dmag_y_LSST-TESS_vega.BP_RP_gaia.norder2.qa1.png) |
 
-#### 1.2.3 ComCam <--> SDSS (u-band)
+#### 1.2.3 LSSTComCam <--> SDSS (u-band)
 
-Unfortunately, none of the ComCam DP1 u-band science exposures overlap SDSS.  Therefore, for transformations between ComCam u-band and SDSS u-band, we make use of synthetic photometry for stellar spectral energy distributions in the Pickles Stellar Spectra Library {cite}`1998PASP..110..863P` for the time being.  For other filters, we recommend the observed relations listed in Section 1.3.5 below.  (***Note:  the Pickles atlas does not include white dwarfs; it is not recommended to use these Pickles-based transformations for white dwarfs, especially in u-band, where white dwarfs differ significantly from other stellar types.)
+Unfortunately, none of the LSSTComCam DP1 u-band science exposures overlap SDSS.  Therefore, for transformations between LSSTComCam u-band and SDSS u-band, we make use of synthetic photometry for stellar spectral energy distributions in the Pickles Stellar Spectra Library {cite}`1998PASP..110..863P` for the time being.  For other filters, we recommend the observed relations listed in Section 1.3.5 below.
+
+:::{note}
+The Pickles atlas does not include white dwarfs; it is not recommended to use these Pickles-based transformations for white dwarfs, especially in u-band, where white dwarfs differ significantly from other stellar types.
+:::
 
 | Conversion                | Transformation Equation                                                        |   RMS | Applicable Color Range            | QA Plot                                                                                                  |
 |:--------------------------|:-------------------------------------------------------------------------------|------:|:----------------------------------|:---------------------------------------------------------------------------------------------------------|
@@ -103,15 +107,15 @@ Unfortunately, none of the ComCam DP1 u-band science exposures overlap SDSS.  Th
 
 
 
-### 1.3. ComCam Transformations
+### 1.3. LSSTComCam Transformations
 
-#### 1.3.1 ComCam <--> DES
+#### 1.3.1 LSSTComCam <--> DES
 
 #### 1.3.1.1 Original
 
-ComCam data were used to derive empirical transformations between DES and LSST ComCam filters. All $S/N >$ 5 point sources in the DES footprint were selected, including quasars and non-standard stars.
+ComCam data were used to derive empirical transformations between DES and LSST LSSTComCam filters. All $S/N >$ 5 point sources in the DES footprint were selected, including quasars and non-standard stars.
 
-:::{table} ComCam to DES Transformation Equations (Version `v_2025_08_22`).
+:::{table} LSSTComCam to DES Transformation Equations (Version `v_2025_08_22`).
 :widths: auto
 
 | Transformation Equation                                                             | RMS      | Applicable Color Range        | QA Plot  |
@@ -163,7 +167,7 @@ ComCam data were used to derive empirical transformations between DES and LSST C
 |      &nbsp;              |                                                    |       |                               |       |
 
 
-#### 1.3.2 ComCam <--> Euclid 
+#### 1.3.2 LSSTComCam <--> Euclid
 
 | Conversion                    | Transformation Equation                                                                |   RMS | Applicable Color Range             | QA Plot                                                                                                |
 |:------------------------------|:---------------------------------------------------------------------------------------|------:|:-----------------------------------|:-------------------------------------------------------------------------------------------------------|
@@ -199,7 +203,7 @@ ComCam data were used to derive empirical transformations between DES and LSST C
 |      &nbsp;              |                                                    |       |                               |       |
 
 
-#### 1.3.3 ComCam <--> Johnson-Cousins UBVRcIc
+#### 1.3.3 LSSTComCam <--> Johnson-Cousins UBVRcIc
 
 | Conversion         | Transformation Equation                         |   RMS | Applicable Color Range          | QA Plot                                                                                      |
 |:-------------------|:------------------------------------------------|------:|:--------------------------------|:---------------------------------------------------------------------------------------------|
@@ -216,10 +220,10 @@ ComCam data were used to derive empirical transformations between DES and LSST C
 | $R \to r_{ComCam}$ | $r_{ComCam} - R = +0.223 (R-I) +0.122$ | 0.014 | $0.2 < (R-I) \leq 1.4$   | [link](_static/plots/qaPlot.Stetson_to_ComCam.fit.dmag_r_ComCam-R.RI.norder1.qa1.png) |
 | $I \to i_{ComCam}$ | $i_{ComCam} - I = +0.178 (R-I) +0.341$ | 0.01  | $0.2 < (R-I) \leq 1.4$   | [link](_static/plots/qaPlot.Stetson_to_ComCam.fit.dmag_i_ComCam-I.RI.norder1.qa1.png) |
 | $I \to z_{ComCam}$ | $z_{ComCam} - I = -0.300 (R-I) +0.456$ | 0.013 | $0.2 < (R-I) \leq 1.4$   | [link](_static/plots/qaPlot.Stetson_to_ComCam.fit.dmag_z_ComCam-I.RI.norder1.qa1.png) |
-| $I \to y_{ComCam}$ | $y_{ComCam} - I = -0.559 (R-I) +0.522$ | 0.026 | $0.2 < (R-I) \leq 1.4$   | [link](_static/plots/qaPlot.Stetson_to_ComCam.fit.dmag_y_ComCam-I.RI.norder1.qa1.png) |   
+| $I \to y_{ComCam}$ | $y_{ComCam} - I = -0.559 (R-I) +0.522$ | 0.026 | $0.2 < (R-I) \leq 1.4$   | [link](_static/plots/qaPlot.Stetson_to_ComCam.fit.dmag_y_ComCam-I.RI.norder1.qa1.png) |
 
 
-#### 1.3.4 ComCam <--> GAIA DR3
+#### 1.3.4 LSSTComCam <--> GAIA DR3
 
 | Conversion                 | Transformation Equation                                                         |   RMS | Applicable Color Range           | QA Plot                                                                                            |
 |:---------------------------|:--------------------------------------------------------------------------------|------:|:---------------------------------|:---------------------------------------------------------------------------------------------------|
@@ -237,7 +241,7 @@ ComCam data were used to derive empirical transformations between DES and LSST C
 | $G_{gaia} \to y_{ComCam}$ | $y_{ComCam} - G_{gaia} = +0.041 (BP-RP)_{gaia}^2 -0.906 (BP-RP)_{gaia} +0.527$ | 0.014 | $-0.2 < (BP-RP)_{gaia} \leq 3.1$ | [link](_static/plots/qaPlot.GaiaDR3_to_ComCam.fit.dmag_y_ComCam-G_gaia.BP_RP_gaia.norder2.qa1.png) |
 
 
-#### 1.3.5 ComCam <--> SDSS DR18
+#### 1.3.5 LSSTComCam <--> SDSS DR18
 
 | Conversion                  | Transformation Equation                                |   RMS | Applicable Color Range        | QA Plot                                                                                        |
 |:----------------------------|:-------------------------------------------------------|------:|:------------------------------|:-----------------------------------------------------------------------------------------------|
@@ -256,7 +260,7 @@ ComCam data were used to derive empirical transformations between DES and LSST C
 | $z_{ComCam} \to z_{sdss}$   | $z_{sdss} - z_{ComCam} = -0.022 (g-i)_{ComCam} -0.031$   | 0.017 | $0.2 < (g-i)_{ComCam} \leq 3.0$ | [link](_static/plots/qaPlot.ComCam_to_SDSS.fit.dmag_z_sdss-z_ComCam.gi_ComCam.norder1.qa1.png)   |
 | $(g-i)_{ComCam} \to (g-i)_{sdss}$ | $(g-i)_{sdss} = +1.065 (g-i)_{ComCam} +0.005$ | 0.023 | $0.2 < (g-i)_{ComCam} \leq 3.0$ | [link](_static/plots/qaPlot.ComCam_to_SDSS.fit.dmag_gi_sdss-gi_ComCam.gi_ComCam.norder1.qa1.png) |
 
-#### 1.3.6 ComCam <--> PanStarrs1 DR2
+#### 1.3.6 LSSTComCam <--> PanStarrs1 DR2
 
 | Conversion               | Transformation Equation                               |   RMS | Applicable Color Range           | QA Plot                                                                                         |
 |:-------------------------|:------------------------------------------------------|------:|:---------------------------------|:------------------------------------------------------------------------------------------------|
@@ -280,14 +284,14 @@ ComCam data were used to derive empirical transformations between DES and LSST C
 
 ### 2.1. Overview
 
-Interpolation methods were used to model complex or non-linear relationships between survey measurements. 
+Interpolation methods were used to model complex or non-linear relationships between survey measurements.
 These methods rely on binning color indices and computing median magnitude differences.
 
-The lookup tables included in the tables below can be used to convert data from one photometric system to the other via interpolation methods. 
-The files contain the delta_mag vs color locus in bins of (typically) 0.1-mag binsize along the color axis. 
-Here is a python code that takes the lookkup table CSV file for the transformation from ComCam $g$-band and $(g-i)$ color to DES $g$-band. The code makes use of the `scipy` `interpolate` routine.
+The lookup tables included in the tables below can be used to convert data from one photometric system to the other via interpolation methods.
+The files contain the delta_mag vs color locus in bins of (typically) 0.1-mag binsize along the color axis.
+Here is a python code that takes the lookup table CSV file for the transformation from LSSTComCam $g$-band and $(g-i)$ color to DES $g$-band. The code makes use of the `scipy` `interpolate` routine.
 
-```
+```python
 import pandas as pd
 from scipy import interpolate
 
@@ -305,27 +309,27 @@ response = interpolate.interp1d(\
 
 # Read in file with data to be transformed...
 df = pd.read_csv(inputFile)
-# The following assumes a column with ComCam g and
-# a column with ComCam (g-i) in this file...
+# The following assumes a column with LSSTComCam g and
+# a column with LSSTComCam (g-i) in this file...
 df['offset'] = response(df['gi_ComCam'].values)
 df['g_des'] = df['g_ComCam'] - df['offset']
 ```
 
-### 2.2 ComCam Transformations
+### 2.2 LSSTComCam Transformations
 
-#### 2.2.1 ComCam <--> DES DR2
+#### 2.2.1 LSSTComCam <--> DES DR2
 
 ##### 2.2.1.1 Original
 
-:::{table} ComCam DP1 to DES DR2 (Version `v_2025_08_22`).
+:::{table} LSSTComCam DP1 to DES DR2 (Version `v_2025_08_22`).
 :widths: auto
 
 | Transformation Relation    | RMS      | Applicable Color Range      | QA Plot  | Lookup Table  |
 | :--------------------------| -------: | --------------------------: | -------: | ------------: |
-| ComCam g,g-i to DES g      |  0.010   | $0.2 < (g-i)_{DES} < 3.0$   | [link](_static/plots/qaPlot_transInterp.ComCam_to_des.g_gi_ComCam.png)     | [link](_static/data/transInterp.ComCam_to_des.g_gi_ComCam.csv) |
-| ComCam r,r-i to DES r      |  0.007   | $0.0 < (r-i)_{DES} < 1.7$   | [link](_static/plots/qaPlot_transInterp.ComCam_to_des.r_ri_ComCam.png)     | [link](_static/data/transInterp.ComCam_to_des.r_ri_ComCam.csv) |
-| ComCam i,i-z to DES i      |  0.006   | $-0.1 < (i-z)_{DES} < 0.8$  | [link](_static/plots/qaPlot_transInterp.ComCam_to_des.i_iz_ComCam.png)     | [link](_static/data/transInterp.ComCam_to_des.i_iz_ComCam.csv) |
-| ComCam z,i-z to DES z      |  0.007   | $-0.1 < (i-z)_{DES} < 0.8$  | [link](_static/plots/qaPlot_transInterp.ComCam_to_des.z_iz_ComCam.png)     | [link](_static/data/transInterp.ComCam_to_des.z_iz_ComCam.csv) |
+| LSSTComCam g,g-i to DES g      |  0.010   | $0.2 < (g-i)_{DES} < 3.0$   | [link](_static/plots/qaPlot_transInterp.ComCam_to_des.g_gi_ComCam.png)     | [link](_static/data/transInterp.ComCam_to_des.g_gi_ComCam.csv) |
+| LSSTComCam r,r-i to DES r      |  0.007   | $0.0 < (r-i)_{DES} < 1.7$   | [link](_static/plots/qaPlot_transInterp.ComCam_to_des.r_ri_ComCam.png)     | [link](_static/data/transInterp.ComCam_to_des.r_ri_ComCam.csv) |
+| LSSTComCam i,i-z to DES i      |  0.006   | $-0.1 < (i-z)_{DES} < 0.8$  | [link](_static/plots/qaPlot_transInterp.ComCam_to_des.i_iz_ComCam.png)     | [link](_static/data/transInterp.ComCam_to_des.i_iz_ComCam.csv) |
+| LSSTComCam z,i-z to DES z      |  0.007   | $-0.1 < (i-z)_{DES} < 0.8$  | [link](_static/plots/qaPlot_transInterp.ComCam_to_des.z_iz_ComCam.png)     | [link](_static/data/transInterp.ComCam_to_des.z_iz_ComCam.csv) |
 :::
 
 ##### 2.2.1.2 Updated
@@ -349,7 +353,7 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 
 
 
-#### 2.2.2 ComCam <--> Euclid
+#### 2.2.2 LSSTComCam <--> Euclid
 
 | Conversion                    |   RMS | Applicable Color Range        | QA Plot                                                                            | Lookup Table                                                               |
 |:------------------------------|------:|:------------------------------|:-----------------------------------------------------------------------------------|:---------------------------------------------------------------------------|
@@ -367,7 +371,7 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 | $Y_{EUCLID} \to z_{ComCam}$   | 0.018 | $0.1 < (VIS-Y)_{Euclid} < 1.9$ | [link](_static/plots/qaPlot_transInterp.Euclid_to_ComCam.z_ComCam_VISY_EUCLID.png) | [link](_static/data/transInterp.Euclid_to_ComCam.z_ComCam_VISY_EUCLID.csv) |
 | $Y_{EUCLID} \to y_{ComCam}$   | 0.045 | $-0.4 < (Y-H)_{Euclid} < 0.4$  | [link](_static/plots/qaPlot_transInterp.Euclid_to_ComCam.y_ComCam_YH_EUCLID.png)   | [link](_static/data/transInterp.Euclid_to_ComCam.y_ComCam_YH_EUCLID.csv)   |
 
-#### 2.2.3 ComCam <--> GAIA DR3
+#### 2.2.3 LSSTComCam <--> GAIA DR3
 
 | Conversion                 |   RMS | Applicable Color Range       | QA Plot                                                                                | Lookup Table                                                                   |
 |:---------------------------|------:|:-----------------------------|:---------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------|
@@ -383,7 +387,7 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 | $G_{gaia} \to i_{ComCam}$ | 0.008 | $0.6 < (BP-RP)_{gaia} < 2.9$ | [link](_static/plots/qaPlot_transInterp.GaiaDR3_to_ComCam_ECDFS.i_ComCam_BP_RP_gaia.png) | [link](_static/data/transInterp.GaiaDR3_to_ComCam_ECDFS.i_ComCam_BP_RP_gaia.csv) |
 | $G_{gaia} \to y_{ComCam}$ | 0.016 | $0.6 < (BP-RP)_{gaia} < 2.9$ | [link](_static/plots/qaPlot_transInterp.GaiaDR3_to_ComCam_ECDFS.y_ComCam_BP_RP_gaia.png) | [link](_static/data/transInterp.GaiaDR3_to_ComCam_ECDFS.y_ComCam_BP_RP_gaia.csv) |
 
-#### 2.2.4 ComCam <--> PS1 DR2
+#### 2.2.4 LSSTComCam <--> PS1 DR2
 
 | Conversion               |   RMS | Applicable Color Range        | QA Plot                                                                       | Lookup Table                                                          |
 |:-------------------------|------:|:------------------------------|:------------------------------------------------------------------------------|:----------------------------------------------------------------------|
@@ -402,7 +406,7 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 | $z_{ps1} \to z_{ComCam}$ | 0.01  | $-0.1 < (i-z)_{ps1} < 0.7$ | [link](_static/plots/qaPlot_transInterp.PS1DR2_to_ComCam.z_ComCam_iz_ps1.png) | [link](_static/data/transInterp.PS1DR2_to_ComCam.z_ComCam_iz_ps1.csv) |
 | $y_{ps1} \to y_{ComCam}$ | 0.013 | $-0.1 < (z-y)_{ps1} < 0.4$ | [link](_static/plots/qaPlot_transInterp.PS1DR2_to_ComCam.y_ComCam_zy_ps1.png) | [link](_static/data/transInterp.PS1DR2_to_ComCam.y_ComCam_zy_ps1.csv) |
 
-#### 2.2.5 ComCam <--> SDSS DR18
+#### 2.2.5 LSSTComCam <--> SDSS DR18
 
 | Conversion                  |   RMS | Applicable Color Range       | QA Plot                                                                           | Lookup Table                                                              |
 |:----------------------------|------:|:-----------------------------|:----------------------------------------------------------------------------------|:--------------------------------------------------------------------------|
@@ -421,7 +425,7 @@ df['g_des'] = df['g_ComCam'] - df['offset']
 | $gi_{sdss} \to gi_{ComCam}$ | 0.021 | $0.4 < (g-i)_{sdss} < 2.5$ | [link](_static/plots/qaPlot_transInterp.SDSSDR18_to_ComCam.gi_ComCam_gi_sdss.png) | [link](_static/data/transInterp.SDSSDR18_to_ComCam.gi_ComCam_gi_sdss.csv) |
 
 
-#### 2.2.5 ComCam <--> Stetson UBVRcIc
+#### 2.2.5 LSSTComCam <--> Stetson UBVRcIc
 
 | Conversion         |   RMS | Applicable Color Range       | QA Plot                                                                    | Lookup Table                                                       |
 |:-------------------|------:|:-----------------------------|:---------------------------------------------------------------------------|:-------------------------------------------------------------------|
