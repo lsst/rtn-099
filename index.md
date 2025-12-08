@@ -314,8 +314,12 @@ df = pd.read_csv(inputFile)
 # The following assumes a column with LSSTComCam g and
 # a column with LSSTComCam (g-i) in this file...
 df['offset'] = response(df['gi_ComCam'].values)
-df['g_des'] = df['g_ComCam'] - df['offset']
+df['g_des'] = df['g_ComCam'] + df['offset']
 ```
+
+***NOTE:  In previous versions of this document, there was a minus sign error in the above code snippet ("df['g_des'] = df['g_ComCam'] - df['offset']" instead of "df['g_des'] = df['g_ComCam'] + df['offset']".  It has now been corrected.  (8 December 2025)***
+
+
 
 ### 2.2 LSSTComCam Transformations
 
