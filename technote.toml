@@ -11,7 +11,7 @@ license.id = "CC-BY-4.0"
 doi = "https://doi.org/10.71929/rubin/3006074"
 
 [technote.status]
-state = "draft"
+state = "stable"
 
 [[technote.authors]]
 internal_id = "porterm"
