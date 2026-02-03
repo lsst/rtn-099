@@ -16,8 +16,7 @@ This technical note should be considered a living document:  as additional photo
 
 ### 1.1. Overview
 
-_Under Construction_
-
+A simple and popular method of performing photometric transformations between two photometric systems is to perform a polynomial fit between the difference in magnitudes between a filter band in one system (say, the LSSTCam $i$ band) and another system (say, the DES $i$ band) and one or more color indices in one of the two sytstems (say, the $(g-i)$ color in the DES system).  These fits can be low-order (say, a first-degree polynomial) or high-order (say, a third or higher degree polynomial).  They can be a single fit over the full color range, or they can be solved "piece-wise", with breaks in the fit at one or more values of the color index.  Here, a balance between simplicity and accuracy is attempted, aiming for the lowest-order fit that still gives a reasonable level of accuracy (typically with RMS'es of a few hundredths to a few tenths of a magnitude.)  If higher accuracy is required -- to the extent that complexity is not a major factor -- use of the Lookup Table (Interpolation) Transformations in Section 2 is recommended.
 
 
 ### 1.2. Synthetic LSSTCam and LSSTComCam Transformations
